@@ -4,58 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FIGO MEDIA — The Performance & Social Growth Agency | Dubai, UAE</title>
-  <meta name="description" content="Figo Media is the performance & social growth agency. We Create. We Perform. We Grow. Performance Marketing, Social Media, and Creative Strategy in Dubai, UAE.">
+  <meta name="description" content="FIGO MEDIA — The Performance & Social Growth Agency. We Create. We Perform. We Grow. Performance Marketing • Social Media • Creative Strategy in Dubai, UAE.">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Ambient Glow Effects -->
+  <!-- Ambient Cinematic Glow Elements -->
   <div class="ambient-glow ambient-hero"></div>
   <div class="ambient-glow ambient-mid"></div>
 
-  <!-- Sticky Glassmorphic Header -->
+  <!-- Header Navigation (Rohan Styled with Meet Agency Badge) -->
   <header class="header-nav">
     <div class="container">
       <div class="nav-inner">
         
-        <!-- Brand Wordmark & Tag -->
-        <a href="#hero" class="brand-mark">
+        <!-- Brand Wordmark -->
+        <a href="#hero" class="brand-mark-link">
           <img src="assets/figo-media-white.png" alt="Figo Media" class="brand-logo-img">
-          <span class="brand-badge">Growth Agency</span>
         </a>
 
-        <!-- Desktop Navigation Links with Editorial Brackets/Sups -->
+        <!-- Desktop Navigation Links with Editorial Sups -->
         <ul class="nav-links">
-          <li class="nav-link-item"><a href="#manifesto">Manifesto <span class="sup">01</span></a></li>
-          <li class="nav-link-item"><a href="#capabilities">Capabilities <span class="sup">02</span></a></li>
-          <li class="nav-link-item"><a href="#work">Work <span class="sup">03</span></a></li>
-          <li class="nav-link-item"><a href="#showreel">Showreel <span class="sup">04</span></a></li>
+          <li class="nav-link-item"><a href="#hero">Home <span class="sup">01</span></a></li>
+          <li class="nav-link-item"><a href="#work">Work <span class="sup">02</span></a></li>
+          <li class="nav-link-item"><a href="#about">About <span class="sup">03</span></a></li>
+          <li class="nav-link-item"><a href="#services">Services <span class="sup">04</span></a></li>
           <li class="nav-link-item"><a href="#packages">Packages <span class="sup">05</span></a></li>
-          <li class="nav-link-item"><a href="#process">Process <span class="sup">06</span></a></li>
-          <li class="nav-link-item"><a href="#contact">Contact <span class="sup">07</span></a></li>
+          <li class="nav-link-item"><a href="#contact">Contact <span class="sup">06</span></a></li>
         </ul>
 
-        <!-- Right Cluster: Live GST Clock & Action Button -->
+        <!-- Right Cluster: Floating Agency Badge & Live Dubai GST Clock -->
         <div class="nav-right-cluster">
+          
           <div class="dubai-clock" id="dubaiClock">
             <span class="pulse-dot"></span>
-            <span>DUBAI <span id="clockTime">--:--:-- GST</span></span>
+            <span>Dubai <span id="clockTime">--:--:-- GST</span></span>
           </div>
 
-          <a href="https://wa.me/971565533893?text=Hi%20Figo%20Media!%20I'd%20like%20to%20discuss%20scaling%20our%20performance%20and%20social%20growth." target="_blank" rel="noopener" class="btn-brand-pill">
-            <span>Book Consultation</span>
-            <span>↗</span>
+          <!-- Top-Right Floating Meet Badge -->
+          <a href="#about" class="floating-agency-badge">
+            <img src="assets/work-model-photo-DBnaOKIf.jpg" alt="Agency Lead" class="floating-badge-thumb">
+            <div class="floating-badge-texts">
+              <span class="floating-badge-title">Growth Agency</span>
+              <span class="floating-badge-sub">Figo Media Team ↗</span>
+            </div>
           </a>
 
           <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
-            MENU
+            Menu
           </button>
         </div>
 
@@ -65,443 +67,230 @@
 
   <!-- Mobile Drawer Menu -->
   <div class="mobile-drawer" id="mobileDrawer">
-    <div class="drawer-header">
+    <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 24px; border-bottom: 1px solid var(--border-line);">
       <img src="assets/figo-media-white.png" alt="Figo Media" style="height: 24px;">
-      <button class="mobile-menu-btn" id="mobileDrawerClose">CLOSE</button>
+      <button class="mobile-menu-btn" id="mobileDrawerClose">Close</button>
     </div>
-    <ul class="drawer-links">
-      <li><a href="#hero" class="mobile-link">Home <span>00</span></a></li>
-      <li><a href="#manifesto" class="mobile-link">Manifesto <span>01</span></a></li>
-      <li><a href="#capabilities" class="mobile-link">Capabilities <span>02</span></a></li>
-      <li><a href="#work" class="mobile-link">Selected Work <span>03</span></a></li>
-      <li><a href="#showreel" class="mobile-link">Showreel <span>04</span></a></li>
-      <li><a href="#packages" class="mobile-link">Growth Packages <span>05</span></a></li>
-      <li><a href="#process" class="mobile-link">Process <span>06</span></a></li>
-      <li><a href="#faq" class="mobile-link">FAQ <span>07</span></a></li>
-      <li><a href="#contact" class="mobile-link">Book Consultation <span>08</span></a></li>
+    <ul style="list-style: none; margin-top: 40px; display: flex; flex-direction: column; gap: 24px;">
+      <li><a href="#hero" class="mobile-link" style="color: #fff; font-size: 24px; text-decoration: none; font-weight: 700; display: flex; justify-content: space-between;">Home <span style="font-family: var(--font-mono); font-size: 13px; color: var(--color-brand);">01</span></a></li>
+      <li><a href="#work" class="mobile-link" style="color: #fff; font-size: 24px; text-decoration: none; font-weight: 700; display: flex; justify-content: space-between;">Selected Work <span style="font-family: var(--font-mono); font-size: 13px; color: var(--color-brand);">02</span></a></li>
+      <li><a href="#about" class="mobile-link" style="color: #fff; font-size: 24px; text-decoration: none; font-weight: 700; display: flex; justify-content: space-between;">About Figo <span style="font-family: var(--font-mono); font-size: 13px; color: var(--color-brand);">03</span></a></li>
+      <li><a href="#services" class="mobile-link" style="color: #fff; font-size: 24px; text-decoration: none; font-weight: 700; display: flex; justify-content: space-between;">Services <span style="font-family: var(--font-mono); font-size: 13px; color: var(--color-brand);">04</span></a></li>
+      <li><a href="#packages" class="mobile-link" style="color: #fff; font-size: 24px; text-decoration: none; font-weight: 700; display: flex; justify-content: space-between;">Packages <span style="font-family: var(--font-mono); font-size: 13px; color: var(--color-brand);">05</span></a></li>
+      <li><a href="#contact" class="mobile-link" style="color: #fff; font-size: 24px; text-decoration: none; font-weight: 700; display: flex; justify-content: space-between;">Book Consultation <span style="font-family: var(--font-mono); font-size: 13px; color: var(--color-brand);">06</span></a></li>
     </ul>
     <div style="margin-top: auto; padding-top: 24px; border-top: 1px solid var(--border-line);">
-      <p style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-bottom: 8px;">DUBAI HEADQUARTERS</p>
-      <a href="tel:+971565533893" style="color: var(--color-brand); text-decoration: none; font-size: 15px; font-weight: 600;">+971 56 553 3893</a>
+      <p style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-bottom: 6px;">DUBAI HEADQUARTERS</p>
+      <a href="tel:+971565533893" style="color: var(--color-brand); text-decoration: none; font-size: 16px; font-weight: 700;">+971 56 553 3893</a>
     </div>
   </div>
 
   <main>
     <!-- ======================================================================
-         HERO SECTION: Performance & Social Growth Agency
+         HERO SECTION (Rohan's Exact Aesthetic with Massive Wordmark & Diagonals)
          ====================================================================== -->
-    <section class="hero-section" id="hero">
-      <div class="container">
+    <section class="hero-editorial-wrap diagonal-cut-bottom" id="hero">
+      
+      <!-- Anamorphic Camera Lens Ambient Video Visual -->
+      <div class="hero-backdrop-cinema" aria-hidden="true"></div>
+
+      <!-- Floating Crosshairs in Hero -->
+      <span class="ch" style="top: 25%; left: 8%;">+</span>
+      <span class="ch" style="top: 30%; right: 28%;">+</span>
+      <span class="ch" style="bottom: 22%; left: 32%;">+</span>
+      <span class="ch" style="bottom: 18%; right: 12%;">+</span>
+
+      <div class="container hero-content-stage">
         
-        <!-- Editorial Meta Header -->
-        <div class="hero-meta-top">
-          <div class="hero-subtag">
-            ( 00 ) // FIGO MEDIA • THE PERFORMANCE & SOCIAL GROWTH AGENCY
-          </div>
-          <div class="hero-live-status">
-            <span class="pulse-dot"></span>
-            <span>LIVE SCALING ENGINE • UAE & GCC</span>
-          </div>
-        </div>
+        <!-- Left Side Content Group -->
+        <div style="max-width: 820px; padding-top: 40px;">
+          
+          <!-- Exact Required Headings -->
+          <h1 class="hero-brand-headline">FIGO MEDIA</h1>
+          <div class="hero-agency-subheading">THE PERFORMANCE & SOCIAL GROWTH AGENCY</div>
 
-        <!-- Main Display Headline -->
-        <h1 class="hero-title">
-          <span class="title-line">WE CREATE.</span>
-          <span class="title-line text-italic-brand">WE PERFORM.</span>
-          <span class="title-line">WE GROW.</span>
-        </h1>
+          <div class="hero-motto-statement">We Create. We Perform. We Grow.</div>
+          <div class="hero-services-pill-line">Performance Marketing • Social Media • Creative Strategy</div>
 
-        <!-- Split Grid: Agency Positioning + Quick Nav Deck -->
-        <div class="hero-lead-grid">
-          <div>
-            <p class="hero-lead-text">
-              We engineer explosive brand trajectory through <strong>Performance Marketing</strong>, <strong>Social Media</strong>, and <strong>Creative Strategy</strong>. From high-converting vertical video to multi-channel ad scaling and aggregator dominance across Dubai and the GCC.
-            </p>
-            <div class="hero-actions">
-              <a href="#work" class="btn-brand-pill">
-                <span>Explore Selected Work</span>
-                <span>↓</span>
-              </a>
-              <a href="#packages" class="btn-secondary">
-                <span>View Growth Packages</span>
-                <span>↗</span>
-              </a>
-            </div>
+          <p class="hero-editorial-lead">
+            Commercials, reels, and performance campaigns for brands that want their market presence to feel <strong>expensive and convert at scale</strong>. From viral vertical hooks to multi-channel paid ad engineering across Dubai & the GCC.
+          </p>
+
+          <div class="hero-link-actions">
+            <a href="#work" class="btn-brand-solid">
+              <span>View the Work</span>
+              <span>↓</span>
+            </a>
+            <a href="https://wa.me/971565533893?text=Hi%20Figo%20Media!%20I'd%20like%20to%20discuss%20a%20growth%20project." target="_blank" rel="noopener" class="btn-editorial-link">
+              <span>Start a Project</span>
+              <span>↗</span>
+            </a>
           </div>
 
-          <!-- Rohan-Style Navigation Deck / Quick Index -->
-          <div class="hero-index-card crosshair-box">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div class="hero-index-header">
-              <span>AGENCY ARCHITECTURE</span>
-              <span>INDEX [04]</span>
-            </div>
-            <ul class="hero-index-list">
-              <li>
-                <a href="#capabilities">
-                  <span><span class="num">01 /</span> Performance Marketing</span>
-                  <span>Meta • Google • TikTok ↗</span>
-                </a>
-              </li>
-              <li>
-                <a href="#capabilities">
-                  <span><span class="num">02 /</span> Social Media & UGC</span>
-                  <span>Reels • Viral Hooks ↗</span>
-                </a>
-              </li>
-              <li>
-                <a href="#capabilities">
-                  <span><span class="num">03 /</span> Creative Strategy & Films</span>
-                  <span>Cinematic Production ↗</span>
-                </a>
-              </li>
-              <li>
-                <a href="#capabilities">
-                  <span><span class="num">04 /</span> E-Com & Aggregators</span>
-                  <span>Talabat • Noon • Amazon ↗</span>
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
       </div>
+
+      <!-- Bottom Category Nav & Clock (Rohan style) -->
+      <div class="container">
+        <div class="hero-bottom-category-strip">
+          <a href="#work" onclick="setCategoryFilter('reels')"><span class="num">01 /</span> Social Reels</a>
+          <a href="#work" onclick="setCategoryFilter('automotive')"><span class="num">02 /</span> Motorsport & Auto</a>
+          <a href="#work" onclick="setCategoryFilter('realestate')"><span class="num">03 /</span> Real Estate & Luxury</a>
+          <a href="#work" onclick="setCategoryFilter('content')"><span class="num">04 /</span> Commercials & Content</a>
+        </div>
+      </div>
+
+      <!-- Giant Wordmark Across Hero Bottom -->
+      <div class="hero-giant-wordmark-bar">
+        <div class="giant-wordmark-text">FIGO MEDIA</div>
+        <svg viewBox="0 0 348 445" fill="currentColor" class="hero-geometric-icon" aria-hidden="true">
+          <path d="M0 0L343.5 223L201.2 314.3L348 410.5H267.5L160.4 340.8L0 445Z M34 62.6L280.3 222.5L170.1 294.1L34 205.6Z M34 258.6L129.3 320.6L34 382.4Z"></path>
+        </svg>
+      </div>
+
     </section>
 
-    <!-- Infinite Marquee Ticker -->
-    <div class="marquee-container" aria-hidden="true">
-      <div class="marquee-track">
-        <div class="marquee-item">PERFORMANCE MARKETING <span class="marquee-dot"></span></div>
-        <div class="marquee-item">SOCIAL GROWTH ENGINE <span class="marquee-dot"></span></div>
-        <div class="marquee-item">CINEMATIC COMMERCIALS <span class="marquee-dot"></span></div>
-        <div class="marquee-item">ROAS SCALING & CRO <span class="marquee-dot"></span></div>
-        <div class="marquee-item">VIRAL REELS & HOOKS <span class="marquee-dot"></span></div>
-        <div class="marquee-item">AGGREGATOR OPERATIONS <span class="marquee-dot"></span></div>
-        <div class="marquee-item">TALABAT & NOON STRATEGY <span class="marquee-dot"></span></div>
-        <div class="marquee-item">CREATIVE DIRECTION <span class="marquee-dot"></span></div>
-        <div class="marquee-item">DUBAI & GCC BRANDS <span class="marquee-dot"></span></div>
-
-        <!-- Repeated loop -->
-        <div class="marquee-item">PERFORMANCE MARKETING <span class="marquee-dot"></span></div>
-        <div class="marquee-item">SOCIAL GROWTH ENGINE <span class="marquee-dot"></span></div>
-        <div class="marquee-item">CINEMATIC COMMERCIALS <span class="marquee-dot"></span></div>
-        <div class="marquee-item">ROAS SCALING & CRO <span class="marquee-dot"></span></div>
-        <div class="marquee-item">VIRAL REELS & HOOKS <span class="marquee-dot"></span></div>
-        <div class="marquee-item">AGGREGATOR OPERATIONS <span class="marquee-dot"></span></div>
-        <div class="marquee-item">TALABAT & NOON STRATEGY <span class="marquee-dot"></span></div>
-        <div class="marquee-item">CREATIVE DIRECTION <span class="marquee-dot"></span></div>
-        <div class="marquee-item">DUBAI & GCC BRANDS <span class="marquee-dot"></span></div>
-      </div>
-    </div>
-
     <!-- ======================================================================
-         ( 01 ) MANIFESTO & AGENCY POSITIONING
+         ( 01 ) ABOUT & MANIFESTO (Light Editorial Contrast Section - Rohan Style)
          ====================================================================== -->
-    <section class="section-spacing border-section-top" id="manifesto">
+    <section class="light-editorial-section diagonal-cut-top" id="about">
       <div class="container">
-        <div class="section-tag">
-          <span class="bracket">( 01 )</span>
-          <span class="bullet"></span>
-          <span>Manifesto & Core Philosophy</span>
+        
+        <div class="section-tag" style="color: #666;">
+          <span class="bracket" style="color: #008f9d;">( 01 )</span>
+          <span class="bullet" style="background: #008f9d;"></span>
+          <span style="color: #333;">About Figo Media</span>
         </div>
 
-        <h2 style="font-size: var(--text-h1); font-weight: 800; letter-spacing: -0.03em; max-width: 860px; line-height: 1.1;">
-          We bridge creative visual artistry with data-driven performance engineering.
+        <h2 class="editorial-h2-large">
+          A UAE-based performance and social growth agency engineering films for luxury, automotive, real estate, and lifestyle brands — shot with intent and scaled for performance.
         </h2>
 
-        <div class="manifesto-grid">
-          <!-- Pillar 1: We Create -->
-          <div class="manifesto-card crosshair-box">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div>
-              <div class="manifesto-header">( Pre // We Create )</div>
-              <h3 class="manifesto-title">Creative Strategy</h3>
-              <p class="manifesto-body">
-                Every frame begins with a psychological hook, not just a budget. We script, design, and direct cinematic commercials and vertical reels tailored to the first 3 seconds — turning casual scrollers into engaged buyers.
-              </p>
-            </div>
-            <div class="manifesto-stats-row">
-              <span class="stat-number">30+</span>
-              <span class="stat-label">Reels / Month per client sprint</span>
-            </div>
-          </div>
-
-          <!-- Pillar 2: We Perform -->
-          <div class="manifesto-card crosshair-box">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div>
-              <div class="manifesto-header">( + Post // We Perform )</div>
-              <h3 class="manifesto-title">Performance Marketing</h3>
-              <p class="manifesto-body">
-                Precision-targeted campaigns across Meta, Google, TikTok, and Snapchat engineered strictly for ROAS. Continuous A/B split-testing, dynamic audience segmentation, and unit-economics optimization.
-              </p>
-            </div>
-            <div class="manifesto-stats-row">
-              <span class="stat-number">4.82x</span>
-              <span class="stat-label">Average Performance ROAS</span>
-            </div>
-          </div>
-
-          <!-- Pillar 3: We Grow -->
-          <div class="manifesto-card crosshair-box">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div>
-              <div class="manifesto-header">( = Results // We Grow )</div>
-              <h3 class="manifesto-title">Social & Aggregator Scale</h3>
-              <p class="manifesto-body">
-                Complete multi-channel expansion. We operate and dominate storefronts across Shopify, Noon, Talabat, Deliveroo, Amazon, and Careem — automating logistics and driving hands-free recurring revenue.
-              </p>
-            </div>
-            <div class="manifesto-stats-row">
-              <span class="stat-number">$285K+</span>
-              <span class="stat-label">Monthly Sales Generated</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         ( 02 ) CAPABILITIES & SERVICES (Expanding Row Accordions)
-         ====================================================================== -->
-    <section class="section-spacing border-section-top" id="capabilities">
-      <div class="container">
-        
-        <div class="services-header-wrap">
-          <div>
-            <div class="section-tag">
-              <span class="bracket">( 02 )</span>
-              <span class="bullet"></span>
-              <span>Capabilities End-to-End</span>
-            </div>
-            <h2 style="font-size: var(--text-h1); font-weight: 800; letter-spacing: -0.03em;">
-              Built for aggressive market positioning.
-            </h2>
-          </div>
-          <p style="font-size: var(--text-small); color: var(--text-muted); max-width: 320px;">
-            Click any service row to reveal our deliverables, technical capabilities, and direct business benefits.
-          </p>
-        </div>
-
-        <div class="services-accordion-list">
+        <div class="editorial-about-grid">
           
-          <!-- Service 01: Performance Marketing -->
-          <div class="service-row-card active crosshair-box" data-service="1">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div class="service-summary-bar">
-              <div class="service-idx">01</div>
-              <div class="service-name-title">Performance Marketing & ROAS Scaling</div>
-              <div class="service-desc-teaser">Precision-targeted campaigns across Meta, Google, TikTok, Snapchat and LinkedIn engineered for bottom-line ROAS.</div>
-              <div class="service-toggle-icon">+</div>
+          <!-- Left Spotlight Visual -->
+          <div class="editorial-spotlight-visual crosshair-box">
+            <span class="ch ch-tl" style="color: #fff;">+</span>
+            <span class="ch ch-tr" style="color: #fff;">+</span>
+            <span class="ch ch-bl" style="color: #fff;">+</span>
+            <span class="ch ch-br" style="color: #fff;">+</span>
+            <img src="assets/work-production-CdUKgkyP.jpg" alt="Production Spotlight">
+          </div>
+
+          <!-- Right Breakdown Columns -->
+          <div class="editorial-split-breakdown">
+            
+            <div class="breakdown-row">
+              <span class="breakdown-tag">( Pre // Strategy )</span>
+              <div class="breakdown-content">
+                Every frame begins with a psychological hook and conversion intent, not just a production budget. We design practical lighting, motion rigs, and high-impact first-second hooks before the camera rolls — so campaigns look ultra-expensive while maximizing return on ad spend.
+              </div>
             </div>
-            <div class="service-drawer-body">
-              <div class="service-drawer-inner">
-                <div class="drawer-subcol">
-                  <h4>What You Get</h4>
-                  <ul>
-                    <li>Multi-Platform Paid Advertising</li>
-                    <li>Precision Retargeting & Custom Audiences</li>
-                    <li>Dynamic Product Ads (DPA)</li>
-                    <li>Conversion Rate Optimization (CRO)</li>
-                    <li>Weekly Attribution & ROAS Audits</li>
-                  </ul>
-                </div>
-                <div class="drawer-subcol">
-                  <h4>Key Business Benefits</h4>
-                  <ul>
-                    <li>Maximized Return on Ad Spend (ROAS)</li>
-                    <li>Data-driven scalable customer acquisition</li>
-                    <li>Lower Cost Per Acquisition (CPA)</li>
-                    <li>Predictable pipeline and revenue forecasting</li>
-                  </ul>
-                </div>
-                <div class="drawer-subcol">
-                  <h4>Core Channels</h4>
-                  <div class="drawer-pill-tags">
-                    <span>Meta Ads</span>
-                    <span>Google Ads</span>
-                    <span>TikTok Ads</span>
-                    <span>Snapchat Ads</span>
-                    <span>LinkedIn Ads</span>
-                    <span>Klaviyo CRM</span>
+
+            <div class="breakdown-row">
+              <span class="breakdown-tag">( + Post // Velocity )</span>
+              <div class="breakdown-content">
+                The edit is where attention turns into revenue. Pacing, sound design, soundscapes, and DaVinci color grading are cut in-house and fine-tuned for every platform: from a <strong>9-second viral TikTok hook (9:16)</strong> to a <strong>cinematic widescreen commercial (16:9)</strong>.
+              </div>
+            </div>
+
+            <div class="breakdown-row">
+              <span class="breakdown-tag">( = Results // Scale )</span>
+              <div class="breakdown-content">
+                <div class="metrics-results-duo">
+                  <div class="metric-results-col">
+                    <div class="val">30+</div>
+                    <div class="lbl">Reels delivered / mo</div>
+                  </div>
+                  <div class="metric-results-col">
+                    <div class="val">4.82x</div>
+                    <div class="lbl">Verified Blended ROAS</div>
+                  </div>
+                  <div class="metric-results-col">
+                    <div class="val">&lt; 8 hrs</div>
+                    <div class="lbl">Turnaround sprint shoot</div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div style="padding-top: 10px;">
+              <a href="#work" class="btn-editorial-link" style="color: #000; border-bottom-color: #000;">
+                <span>Explore Agency Portfolio</span> ↗
+              </a>
+            </div>
+
           </div>
 
-          <!-- Service 02: Social Media & Growth -->
-          <div class="service-row-card crosshair-box" data-service="2">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div class="service-summary-bar">
-              <div class="service-idx">02</div>
-              <div class="service-name-title">Social Media & Organic Growth Engine</div>
-              <div class="service-desc-teaser">Always-on vertical video streams, viral hook engineering, community building, and creative campaigns that convert.</div>
-              <div class="service-toggle-icon">+</div>
-            </div>
-            <div class="service-drawer-body">
-              <div class="service-drawer-inner">
-                <div class="drawer-subcol">
-                  <h4>What You Get</h4>
-                  <ul>
-                    <li>Strategic Monthly Content Calendar</li>
-                    <li>First-3-Second Hook Development</li>
-                    <li>Always-On Vertical Reels & TikToks</li>
-                    <li>UGC & Influencer Creator Sourcing</li>
-                    <li>Active Community & DM Management</li>
-                  </ul>
-                </div>
-                <div class="drawer-subcol">
-                  <h4>Key Business Benefits</h4>
-                  <ul>
-                    <li>Consistent, high-aesthetic brand presence</li>
-                    <li>Rapid organic audience growth & loyalty</li>
-                    <li>Higher organic conversions and brand recall</li>
-                    <li>Hands-free content pipeline from shoot to post</li>
-                  </ul>
-                </div>
-                <div class="drawer-subcol">
-                  <h4>Deliverables</h4>
-                  <div class="drawer-pill-tags">
-                    <span>Instagram Reels</span>
-                    <span>TikTok Videos</span>
-                    <span>YouTube Shorts</span>
-                    <span>Carousel Posts</span>
-                    <span>Community Ops</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
 
-          <!-- Service 03: Creative Strategy & Film Production -->
-          <div class="service-row-card crosshair-box" data-service="3">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div class="service-summary-bar">
-              <div class="service-idx">03</div>
-              <div class="service-name-title">Creative Strategy & Film Production</div>
-              <div class="service-desc-teaser">Cinematic product films, luxury commercial shoots, podcast series, SaaS videos, and complete brand identity design.</div>
-              <div class="service-toggle-icon">+</div>
-            </div>
-            <div class="service-drawer-body">
-              <div class="service-drawer-inner">
-                <div class="drawer-subcol">
-                  <h4>What You Get</h4>
-                  <ul>
-                    <li>Cinematic Commercials & Brand Films</li>
-                    <li>Studio & Lifestyle Product Photography</li>
-                    <li>Full Podcast Recording & Sound Design</li>
-                    <li>Visual Identity, Logo Systems & Guidelines</li>
-                    <li>Multi-Platform Aspect Ratio Delivery (9:16, 16:9, 1:1)</li>
-                  </ul>
-                </div>
-                <div class="drawer-subcol">
-                  <h4>Key Business Benefits</h4>
-                  <ul>
-                    <li>Luxury positioning that commands premium pricing</li>
-                    <li>High-conversion visual storytelling</li>
-                    <li>Multi-channel ready asset library</li>
-                    <li>Elevated brand perception across all touchpoints</li>
-                  </ul>
-                </div>
-                <div class="drawer-subcol">
-                  <h4>Production Suites</h4>
-                  <div class="drawer-pill-tags">
-                    <span>4K Cinema Cameras</span>
-                    <span>Studio Lighting</span>
-                    <span>DaVinci Color Grade</span>
-                    <span>Sound Design</span>
-                    <span>Brand Guidelines</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- Platform & Aggregator Partner Strip -->
+        <div class="brand-strip-container">
+          <p style="font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; color: #888; margin-bottom: 20px; letter-spacing: 0.08em;">
+            Platforms & Aggregators We Actively Manage & Scale
+          </p>
+          <div class="brand-strip-track">
+            <div class="brand-strip-item"><img src="assets/logo-talabat-D_6sUrFb.png" alt="Talabat"></div>
+            <div class="brand-strip-item"><img src="assets/logo-noon-DQjtJ7tV.png" alt="Noon"></div>
+            <div class="brand-strip-item"><img src="assets/logo-deliveroo-D3T_CNKt.png" alt="Deliveroo"></div>
+            <div class="brand-strip-item"><img src="assets/logo-careem-oa58qM80.png" alt="Careem"></div>
+            <div class="brand-strip-item"><img src="assets/logo-smiles-CqRFj0QV.png" alt="Smiles"></div>
+            <div class="brand-strip-item"><img src="assets/logo-keeta-Bg32Fq63.png" alt="Keeta"></div>
           </div>
-
-          <!-- Service 04: E-Commerce & Aggregators -->
-          <div class="service-row-card crosshair-box" data-service="4">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div class="service-summary-bar">
-              <div class="service-idx">04</div>
-              <div class="service-name-title">E-Commerce & Aggregator Management</div>
-              <div class="service-desc-teaser">End-to-end ops on Noon, Talabat, Deliveroo, Careem, Smiles, Keeta, Amazon and Shopify — listings, pricing, and growth.</div>
-              <div class="service-toggle-icon">+</div>
-            </div>
-            <div class="service-drawer-body">
-              <div class="service-drawer-inner">
-                <div class="drawer-subcol">
-                  <h4>What You Get</h4>
-                  <ul>
-                    <li>Aggregator Storefront Ops (Talabat, Noon, Deliveroo, Careem)</li>
-                    <li>Optimized Product & Menu Catalog Listings</li>
-                    <li>Dynamic Pricing & In-App Promotion Management</li>
-                    <li>Shopify Conversion Rate Optimization</li>
-                    <li>Multi-Channel Inventory & Sales Analytics</li>
-                  </ul>
-                </div>
-                <div class="drawer-subcol">
-                  <h4>Key Business Benefits</h4>
-                  <ul>
-                    <li>Maximum top-of-feed platform visibility</li>
-                    <li>Streamlined order flow and hands-free fulfillment</li>
-                    <li>Outpace competing brands in aggregator search algorithms</li>
-                    <li>Scalable direct-to-consumer revenue stream</li>
-                  </ul>
-                </div>
-                <div class="drawer-subcol">
-                  <h4>Supported Platforms</h4>
-                  <div class="drawer-pill-tags">
-                    <span>Talabat</span>
-                    <span>Deliveroo</span>
-                    <span>Noon</span>
-                    <span>Careem</span>
-                    <span>Smiles</span>
-                    <span>Keeta</span>
-                    <span>Shopify</span>
-                    <span>Amazon</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
 
       </div>
     </section>
 
     <!-- ======================================================================
-         ( 03 ) SELECTED WORK & PERFORMANCE METRICS
+         ( 02 ) CURRENTLY / REC (Now) (Rohan's Exact Cinema Feature)
          ====================================================================== -->
-    <section class="section-spacing border-section-top" id="work">
+    <section class="rec-banner-section" id="currently">
       <div class="container">
         
-        <div class="services-header-wrap">
+        <div class="rec-hero-card crosshair-box">
+          <span class="ch ch-tl">+</span>
+          <span class="ch ch-tr">+</span>
+          <span class="ch ch-bl">+</span>
+          <span class="ch ch-br">+</span>
+          
+          <div class="rec-badge-corner">
+            <span class="rec-pulse-dot"></span>
+            <span>REC</span>
+          </div>
+
+          <div class="rec-now-corner">(Now)</div>
+          <div class="rec-tc-corner" id="timecodeDisplay">TC 13:51:39:22</div>
+
+          <div class="rec-eyebrow">Currently scaling campaigns with</div>
+          <h2 class="rec-client-title">Sterling Luxury Lifestyle</h2>
+          <div class="rec-project-sub">Armaf Fragrance & Automotive Sprint II</div>
+
+          <button class="btn-play-rec" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel7.mp4')">
+            <span>▶ Play Film</span>
+          </button>
+
+          <div class="rec-previously-links">
+            <span>▶ Previously — Wildcraft UAE</span>
+            <span>▶ Previously — Polaris Desert Action</span>
+            <span>▶ Previously — Talabat Top-Spot</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ( 03 ) SELECTED WORK & CATEGORIES
+         True Landscape (16:9) & Portrait (9:16) Display Architecture!
+         Categories: Reels & Hooks, Automotive & Motorsport, Real Estate,
+                     Content Creation, Events & Lifestyle
+         ====================================================================== -->
+    <section class="work-section-wrap" id="work">
+      <div class="container">
+        
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px;">
           <div>
             <div class="section-tag">
               <span class="bracket">( 03 )</span>
@@ -509,318 +298,205 @@
               <span>Selected Work ( 2024–2026 )</span>
             </div>
             <h2 style="font-size: var(--text-h1); font-weight: 800; letter-spacing: -0.03em;">
-              Work that performs and converts.
+              Recent Work, Categorized by Format & Intent.
             </h2>
           </div>
-          <p style="font-size: var(--text-small); color: var(--text-muted); max-width: 320px;">
-            A curated portfolio of high-growth campaigns, visual identities, and multi-channel scale operations.
+          <p style="font-size: var(--text-small); color: var(--text-muted); max-width: 340px;">
+            Landscape commercial films displayed in widescreen 16:9; viral vertical reels displayed in native 9:16 portrait. Hover to preview motion, click to play.
           </p>
         </div>
 
-        <!-- Filter Pill Tabs -->
+        <!-- Filter Pill Tabs Matching User's Required Categories -->
         <div class="work-filter-bar">
           <button class="filter-btn active" data-filter="all">All Work [08]</button>
-          <button class="filter-btn" data-filter="performance">Performance & E-Com</button>
-          <button class="filter-btn" data-filter="production">Production & Films</button>
-          <button class="filter-btn" data-filter="branding">Branding & Identity</button>
-          <button class="filter-btn" data-filter="aggregators">Aggregators</button>
+          <button class="filter-btn" data-filter="reels">Social Reels (9:16)</button>
+          <button class="filter-btn" data-filter="automotive">Motorsport & Auto (16:9)</button>
+          <button class="filter-btn" data-filter="realestate">Real Estate & Luxury (16:9)</button>
+          <button class="filter-btn" data-filter="content">Content Creation (9:16)</button>
+          <button class="filter-btn" data-filter="events">Events & Nightlife (16:9)</button>
         </div>
 
-        <!-- Work Cards Grid -->
-        <div class="work-grid">
+        <!-- Dynamic Work Grid with Native Landscape & Portrait Containers -->
+        <div class="work-grid-masonry">
           
-          <!-- Card 1: E-Commerce Scale Dashboard -->
-          <div class="work-item-card crosshair-box" data-category="performance" onclick="openWorkModal('ecom')">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div class="work-thumb-wrapper">
-              <img src="assets/work-ecom-pSvyTuRE.jpg" alt="E-Commerce Scale Engine" class="work-thumb-img">
-              <span class="work-overlay-badge">Performance / E-Com</span>
+          <!-- 1. AUTOMOTIVE & MOTORSPORT (Landscape 16:9) -->
+          <div class="work-card-landscape crosshair-box" data-category="automotive" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel10.mp4')">
+            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
+            <div class="landscape-viewport">
+              <span class="card-category-tag">Motorsport & Auto</span>
+              <span class="card-aspect-badge">16:9 Landscape</span>
+              <img src="assets/work-production-CdUKgkyP.jpg" alt="Automotive Film">
             </div>
-            <div class="work-card-info">
+            <div class="card-info-pane">
               <div>
-                <div class="work-card-top">
-                  <h3 class="work-card-title">E-Commerce Revenue Engine</h3>
-                  <span class="work-card-arrow">↗</span>
+                <div class="card-title-row">
+                  <h3 class="card-work-title">Automotive Night Sprint & Supercars</h3>
+                  <span class="card-arrow-icon">▶</span>
                 </div>
-                <p class="work-card-desc">
-                  Multi-channel storefront ops across Amazon, Noon, and Shopify. Deployed automated order tracking, pricing algorithms, and full-funnel Meta retargeting.
+                <p class="card-work-desc">
+                  High-speed cinematic automotive film shot on location in Dubai. Featuring practical rig lighting, rolling camera tracking, and roaring anamorphic sound design.
                 </p>
               </div>
-              <div class="work-card-stats">
-                <div class="work-mini-stat">
-                  <span class="val">$285,420</span>
-                  <span class="lbl">Monthly Revenue</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">4.82x</span>
-                  <span class="lbl">Blended ROAS</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">4,320</span>
-                  <span class="lbl">Orders Shipped</span>
-                </div>
+              <div class="card-stats-pillbar">
+                <div class="stat-item"><span class="val">16:9 4K</span><span class="lbl">Cinema Master</span></div>
+                <div class="stat-item"><span class="val">Sound Cut</span><span class="lbl">In-House Mix</span></div>
+                <div class="stat-item"><span class="val">Commercial</span><span class="lbl">Broadcast Ready</span></div>
               </div>
             </div>
           </div>
 
-          <!-- Card 2: Aggregator Dominance Suite -->
-          <div class="work-item-card crosshair-box" data-category="aggregators" onclick="openWorkModal('aggregators')">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div class="work-thumb-wrapper">
-              <img src="assets/work-aggregators-Dh4rNccG.jpg" alt="Aggregator Management" class="work-thumb-img">
-              <span class="work-overlay-badge">Aggregators / UAE</span>
+          <!-- 2. SOCIAL REELS (Portrait 9:16) -->
+          <div class="work-card-portrait crosshair-box" data-category="reels" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel7.mp4')">
+            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
+            <div class="portrait-viewport">
+              <span class="card-category-tag">Reels & Hooks</span>
+              <span class="card-aspect-badge">9:16 Portrait</span>
+              <img src="https://i.postimg.cc/nzxDDCvL/poster7.jpg" alt="Viral Hook Reel">
             </div>
-            <div class="work-card-info">
+            <div class="card-info-pane">
               <div>
-                <div class="work-card-top">
-                  <h3 class="work-card-title">Food & Retail Aggregator Suite</h3>
-                  <span class="work-card-arrow">↗</span>
+                <div class="card-title-row">
+                  <h3 class="card-work-title">Viral Hook & Lifestyle Reel</h3>
+                  <span class="card-arrow-icon">▶</span>
                 </div>
-                <p class="work-card-desc">
-                  Complete end-to-end ops on Talabat, Deliveroo, Noon, Careem, Smiles, and Keeta. Menu optimization, dynamic promotions, and instant financial reconciliation.
+                <p class="card-work-desc">
+                  Vertical-first narrative engineered around the first 2 seconds. Seamless pacing, rhythmic cut transitions, and bold visual grading.
                 </p>
               </div>
-              <div class="work-card-stats">
-                <div class="work-mini-stat">
-                  <span class="val">6 Platforms</span>
-                  <span class="lbl">Managed Unified</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">+140%</span>
-                  <span class="lbl">Platform Visibility</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">Zero Delay</span>
-                  <span class="lbl">Menu Reconciliation</span>
-                </div>
+              <div class="card-stats-pillbar">
+                <div class="stat-item"><span class="val">9:16 Vertical</span><span class="lbl">Mobile Ratio</span></div>
+                <div class="stat-item"><span class="val">3.4M+</span><span class="lbl">Organic Views</span></div>
+                <div class="stat-item"><span class="val">+42%</span><span class="lbl">Hook Retention</span></div>
               </div>
             </div>
           </div>
 
-          <!-- Card 3: Multi-Platform Ads Management -->
-          <div class="work-item-card crosshair-box" data-category="performance" onclick="openWorkModal('ads')">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div class="work-thumb-wrapper">
-              <img src="assets/work-ads-iShBXKIS.jpg" alt="Ads Management" class="work-thumb-img">
-              <span class="work-overlay-badge">Paid Media / Growth</span>
+          <!-- 3. REAL ESTATE & LUXURY ARCHITECTURE (Landscape 16:9) -->
+          <div class="work-card-landscape crosshair-box" data-category="realestate" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel11.MP4')">
+            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
+            <div class="landscape-viewport">
+              <span class="card-category-tag">Real Estate & Architecture</span>
+              <span class="card-aspect-badge">16:9 Landscape</span>
+              <img src="https://i.postimg.cc/G2542Qf7/poster11.jpg" alt="Luxury Villa Walkthrough">
             </div>
-            <div class="work-card-info">
+            <div class="card-info-pane">
               <div>
-                <div class="work-card-top">
-                  <h3 class="work-card-title">Precision Ads Management</h3>
-                  <span class="work-card-arrow">↗</span>
+                <div class="card-title-row">
+                  <h3 class="card-work-title">Palm Jumeirah Luxury Villa Walkthrough</h3>
+                  <span class="card-arrow-icon">▶</span>
                 </div>
-                <p class="work-card-desc">
-                  Full-funnel paid media campaigns across Meta, TikTok, and Google Ads. Engineered rapid-testing creative sprints, dynamic retargeting, and budget scaling.
+                <p class="card-work-desc">
+                  Cinematic architectural showcase with smooth gimbal sweeps, dusk golden hour natural illumination, and premium lifestyle narrative.
                 </p>
               </div>
-              <div class="work-card-stats">
-                <div class="work-mini-stat">
-                  <span class="val">$18.7K</span>
-                  <span class="lbl">Ad Spend Managed</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">4.82x</span>
-                  <span class="lbl">Verified ROAS</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">-38%</span>
-                  <span class="lbl">Customer CPA</span>
-                </div>
+              <div class="card-stats-pillbar">
+                <div class="stat-item"><span class="val">16:9 4K</span><span class="lbl">Widescreen</span></div>
+                <div class="stat-item"><span class="val">High-Ticket</span><span class="lbl">Buyer Funnel</span></div>
+                <div class="stat-item"><span class="val">HDR10</span><span class="lbl">Color Grade</span></div>
               </div>
             </div>
           </div>
 
-          <!-- Card 4: Production & Cinematography -->
-          <div class="work-item-card crosshair-box" data-category="production" onclick="openWorkModal('production')">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div class="work-thumb-wrapper">
-              <img src="assets/work-production-CdUKgkyP.jpg" alt="Production and Cinematography" class="work-thumb-img">
-              <span class="work-overlay-badge">Film / Production</span>
+          <!-- 4. CONTENT CREATION & PRODUCT STILLS (Portrait 9:16) -->
+          <div class="work-card-portrait crosshair-box" data-category="content" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel4.mp4')">
+            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
+            <div class="portrait-viewport">
+              <span class="card-category-tag">Content Creation</span>
+              <span class="card-aspect-badge">9:16 Portrait</span>
+              <img src="https://i.postimg.cc/JhSM6VyH/poster4.jpg" alt="Product Film">
             </div>
-            <div class="work-card-info">
+            <div class="card-info-pane">
               <div>
-                <div class="work-card-top">
-                  <h3 class="work-card-title">Commercial Cinematography</h3>
-                  <span class="work-card-arrow">↗</span>
+                <div class="card-title-row">
+                  <h3 class="card-work-title">Luxury Fragrance Commercial</h3>
+                  <span class="card-arrow-icon">▶</span>
                 </div>
-                <p class="work-card-desc">
-                  High-fidelity brand commercials, automotive films, and luxury lifestyle campaigns shot with cinematic lighting and cut for social conversion.
+                <p class="card-work-desc">
+                  Studio product shoot built around practical motor turntables, liquid ice textures, and polarized soft lighting for luxury fragrance brands.
                 </p>
               </div>
-              <div class="work-card-stats">
-                <div class="work-mini-stat">
-                  <span class="val">4K Cinema</span>
-                  <span class="lbl">Master Resolution</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">9:16 + 16:9</span>
-                  <span class="lbl">Aspect Formats</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">Full In-House</span>
-                  <span class="lbl">Color & Audio Cut</span>
-                </div>
+              <div class="card-stats-pillbar">
+                <div class="stat-item"><span class="val">Macro 4K</span><span class="lbl">Bottle Stills</span></div>
+                <div class="stat-item"><span class="val">4.82x</span><span class="lbl">Ad ROAS</span></div>
+                <div class="stat-item"><span class="val">Studio</span><span class="lbl">Light Rig</span></div>
               </div>
             </div>
           </div>
 
-          <!-- Card 5: Model & Commercial Photography -->
-          <div class="work-item-card crosshair-box" data-category="production" onclick="openWorkModal('model')">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div class="work-thumb-wrapper">
-              <img src="assets/work-model-photo-DBnaOKIf.jpg" alt="Model Photography" class="work-thumb-img">
-              <span class="work-overlay-badge">Photography / Fashion</span>
+          <!-- 5. MOTORSPORT & DESERT ACTION (Landscape 16:9) -->
+          <div class="work-card-landscape crosshair-box" data-category="automotive" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel9.mp4')">
+            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
+            <div class="landscape-viewport">
+              <span class="card-category-tag">Motorsport & Off-Road</span>
+              <span class="card-aspect-badge">16:9 Landscape</span>
+              <img src="https://i.postimg.cc/gjnTkmDD/IMG-7184.jpg" alt="Desert Motorsport Action">
             </div>
-            <div class="work-card-info">
+            <div class="card-info-pane">
               <div>
-                <div class="work-card-top">
-                  <h3 class="work-card-title">Editorial Model Photography</h3>
-                  <span class="work-card-arrow">↗</span>
+                <div class="card-title-row">
+                  <h3 class="card-work-title">Polaris & Sherco Desert Dune Action</h3>
+                  <span class="card-arrow-icon">▶</span>
                 </div>
-                <p class="work-card-desc">
-                  Fashion, apparel, and lifestyle model photography with art-directed lighting that elevates brand perception and powers lookbooks and paid ads.
+                <p class="card-work-desc">
+                  High-energy dune buggy and dirt bike film shot in the red sand deserts of Dubai. High-speed chase tracking, dust storms, and aggressive sound editing.
                 </p>
               </div>
-              <div class="work-card-stats">
-                <div class="work-mini-stat">
-                  <span class="val">Studio & On-Loc</span>
-                  <span class="lbl">Shoot Environments</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">High Retouch</span>
-                  <span class="lbl">Commercial Grade</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">Ad-Ready</span>
-                  <span class="lbl">Multi-Ratio Crops</span>
-                </div>
+              <div class="card-stats-pillbar">
+                <div class="stat-item"><span class="val">Action 120fps</span><span class="lbl">Slow Motion</span></div>
+                <div class="stat-item"><span class="val">FPV Drone</span><span class="lbl">Chases</span></div>
+                <div class="stat-item"><span class="val">Outdoor</span><span class="lbl">Location Shoot</span></div>
               </div>
             </div>
           </div>
 
-          <!-- Card 6: Product Photography -->
-          <div class="work-item-card crosshair-box" data-category="production" onclick="openWorkModal('product')">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div class="work-thumb-wrapper">
-              <img src="assets/work-product-photo-DsF3P0Wn.jpg" alt="Product Photography" class="work-thumb-img">
-              <span class="work-overlay-badge">Commercial / Stills</span>
+          <!-- 6. EVENTS & NIGHTLIFE (Portrait 9:16) -->
+          <div class="work-card-portrait crosshair-box" data-category="events" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel6.mp4')">
+            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
+            <div class="portrait-viewport">
+              <span class="card-category-tag">Events & Nightlife</span>
+              <span class="card-aspect-badge">9:16 Portrait</span>
+              <img src="https://i.postimg.cc/nL5F52Ys/poster6.png" alt="Event Coverage">
             </div>
-            <div class="work-card-info">
+            <div class="card-info-pane">
               <div>
-                <div class="work-card-top">
-                  <h3 class="work-card-title">Luxury Product Stills</h3>
-                  <span class="work-card-arrow">↗</span>
+                <div class="card-title-row">
+                  <h3 class="card-work-title">NextDoorParty Dubai Event Film</h3>
+                  <span class="card-arrow-icon">▶</span>
                 </div>
-                <p class="work-card-desc">
-                  Macro product photography, rotating turntable captures, and creative practical lighting for perfumes, cosmetics, and luxury goods.
+                <p class="card-work-desc">
+                  Electric nightlife and festival coverage with low-light camera mastery, beat-matched jump cuts, and atmospheric neon flare visuals.
                 </p>
               </div>
-              <div class="work-card-stats">
-                <div class="work-mini-stat">
-                  <span class="val">Zero Glare</span>
-                  <span class="lbl">Polarized Light</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">E-Com White</span>
-                  <span class="lbl">+ Lifestyle Sets</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">100% Crisp</span>
-                  <span class="lbl">Retina Optimized</span>
-                </div>
+              <div class="card-stats-pillbar">
+                <div class="stat-item"><span class="val">Live Coverage</span><span class="lbl">Event Turnaround</span></div>
+                <div class="stat-item"><span class="val">24h Edit</span><span class="lbl">Social Delivery</span></div>
+                <div class="stat-item"><span class="val">Viral Sound</span><span class="lbl">Audio Sync</span></div>
               </div>
             </div>
           </div>
 
-          <!-- Card 7: Branding & Identity -->
-          <div class="work-item-card crosshair-box" data-category="branding" onclick="openWorkModal('branding')">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div class="work-thumb-wrapper">
-              <img src="assets/work-branding-CXzo-vUP.jpg" alt="Branding & Identity" class="work-thumb-img">
-              <span class="work-overlay-badge">Identity / Design</span>
+          <!-- 7. BRAND STORY & NARRATIVE (Landscape 16:9 Wide) -->
+          <div class="work-card-landscape wide crosshair-box" data-category="content" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel3.mp4')">
+            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
+            <div class="landscape-viewport">
+              <span class="card-category-tag">Brand Story</span>
+              <span class="card-aspect-badge">16:9 Landscape Cinematic</span>
+              <img src="https://i.postimg.cc/jqFK2DYK/poster3.jpg" alt="Brand Narrative">
             </div>
-            <div class="work-card-info">
+            <div class="card-info-pane">
               <div>
-                <div class="work-card-top">
-                  <h3 class="work-card-title">Brand Identity & Collateral</h3>
-                  <span class="work-card-arrow">↗</span>
+                <div class="card-title-row">
+                  <h3 class="card-work-title">Cinematic Brand Narrative & Founder Journey</h3>
+                  <span class="card-arrow-icon">▶</span>
                 </div>
-                <p class="work-card-desc">
-                  Holistic visual identity systems: logos, typography guidelines, luxury stationery, company profiles, brochures, and packaging.
+                <p class="card-work-desc">
+                  An editorial documentary-style commercial connecting brand heritage with modern aspiration. Designed for hero website banners, investor pitches, and YouTube ads.
                 </p>
               </div>
-              <div class="work-card-stats">
-                <div class="work-mini-stat">
-                  <span class="val">Comprehensive</span>
-                  <span class="lbl">Brand Guideline Book</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">Vector Scalable</span>
-                  <span class="lbl">All Print & Digital</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">Full IP</span>
-                  <span class="lbl">100% Owned by Client</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 8: High-Conversion Web Architecture -->
-          <div class="work-item-card crosshair-box" data-category="performance" onclick="openWorkModal('website')">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div class="work-thumb-wrapper">
-              <img src="assets/work-website-CUU0C_MR.jpg" alt="Website Development" class="work-thumb-img">
-              <span class="work-overlay-badge">Web / Development</span>
-            </div>
-            <div class="work-card-info">
-              <div>
-                <div class="work-card-top">
-                  <h3 class="work-card-title">High-Converting Web Architecture</h3>
-                  <span class="work-card-arrow">↗</span>
-                </div>
-                <p class="work-card-desc">
-                  Ultra-fast modern landing pages and Shopify storefronts engineered for sub-second loads, seamless mobile checkout, and high conversion rates.
-                </p>
-              </div>
-              <div class="work-card-stats">
-                <div class="work-mini-stat">
-                  <span class="val">&lt; 0.8s</span>
-                  <span class="lbl">Load Velocity</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">100/100</span>
-                  <span class="lbl">Mobile UX Score</span>
-                </div>
-                <div class="work-mini-stat">
-                  <span class="val">+45%</span>
-                  <span class="lbl">Checkout Conversion</span>
-                </div>
+              <div class="card-stats-pillbar">
+                <div class="stat-item"><span class="val">4K Anamorphic</span><span class="lbl">Letterbox Look</span></div>
+                <div class="stat-item"><span class="val">Full Score</span><span class="lbl">Original Mix</span></div>
+                <div class="stat-item"><span class="val">Multi-Cut</span><span class="lbl">30s + 60s + 9:16</span></div>
               </div>
             </div>
           </div>
@@ -831,152 +507,91 @@
     </section>
 
     <!-- ======================================================================
-         ( 04 ) IN MOTION / VIDEO SHOWREEL ARCHIVE (Rohan Inspired)
+         ( 04 ) SERVICES (Numbered Large Rows with Center Preview - Rohan Style)
          ====================================================================== -->
-    <section class="section-spacing border-section-top" id="showreel">
+    <section class="section-spacing" id="services" style="border-top: 1px solid var(--border-line);">
       <div class="container">
         
-        <div class="services-header-wrap">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 24px;">
           <div>
             <div class="section-tag">
               <span class="bracket">( 04 )</span>
               <span class="bullet"></span>
-              <span>In Motion // Video Showreels</span>
+              <span>Services & Capabilities</span>
             </div>
             <h2 style="font-size: var(--text-h1); font-weight: 800; letter-spacing: -0.03em;">
-              Visuals that command attention.
+              Story-first production & performance engineering.
             </h2>
           </div>
-          <p style="font-size: var(--text-small); color: var(--text-muted); max-width: 320px;">
-            Hover to preview reel motion. Tap any card to play in high-definition with sound.
-          </p>
+          <a href="https://wa.me/971565533893?text=Hi%20Figo%20Media!%20I'd%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener" class="btn-brand-solid">
+            <span>Start a Project</span> ↗
+          </a>
         </div>
 
-        <div class="showreel-grid">
+        <div class="services-editorial-list">
           
-          <!-- Reel 1 -->
-          <div class="reel-card crosshair-box" 
-               data-video="https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel7.mp4"
-               data-title="Cinematic Promotion"
-               data-category="Commercial">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <img src="https://i.postimg.cc/nzxDDCvL/poster7.jpg" alt="Promotion Film" class="reel-poster-media" loading="lazy">
-            <video class="reel-video-preview" muted loop playsinline preload="none"></video>
-            <div class="reel-gradient-scrim"></div>
-            <div class="reel-card-content">
-              <div class="reel-card-meta">
-                <span class="reel-category">Commercial Reel</span>
-                <span class="reel-title">Cinematic Promotion</span>
-              </div>
-              <div class="reel-play-btn">▶</div>
+          <!-- 01 Performance Marketing -->
+          <div class="service-editorial-row">
+            <div class="service-huge-number">01</div>
+            <div class="service-center-thumb">
+              <img src="assets/work-ads-iShBXKIS.jpg" alt="Performance Marketing">
+            </div>
+            <div class="service-right-detail">
+              <div class="service-sub-tag">Paid Media & ROAS Scaling</div>
+              <h3>Performance Marketing</h3>
+              <p>Precision-targeted paid advertising across Meta, Google, TikTok, Snapchat, and LinkedIn. Engineered strictly for bottom-line ROAS, lower CPA, and multi-tier retargeting funnels.</p>
             </div>
           </div>
 
-          <!-- Reel 2 -->
-          <div class="reel-card crosshair-box" 
-               data-video="https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel10.mp4"
-               data-title="Brand Promotion"
-               data-category="Social Reel">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <img src="https://i.postimg.cc/bvmBYjhX/poster10.jpg" alt="Promotion Video" class="reel-poster-media" loading="lazy">
-            <video class="reel-video-preview" muted loop playsinline preload="none"></video>
-            <div class="reel-gradient-scrim"></div>
-            <div class="reel-card-content">
-              <div class="reel-card-meta">
-                <span class="reel-category">Social Reel</span>
-                <span class="reel-title">Promotion Video</span>
-              </div>
-              <div class="reel-play-btn">▶</div>
+          <!-- 02 Social Reels & Content -->
+          <div class="service-editorial-row">
+            <div class="service-huge-number">02</div>
+            <div class="service-center-thumb">
+              <img src="https://i.postimg.cc/nzxDDCvL/poster7.jpg" alt="Social Content">
+            </div>
+            <div class="service-right-detail">
+              <div class="service-sub-tag">Reels, Hooks & Distribution</div>
+              <h3>Social Content & Reels</h3>
+              <p>Vertical-first content built around the first 2 seconds: strong psychological hooks, clean pacing, captions, and an always-on posting schedule of 30+ reels per month.</p>
             </div>
           </div>
 
-          <!-- Reel 3 -->
-          <div class="reel-card crosshair-box" 
-               data-video="https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel4.mp4"
-               data-title="Product Film"
-               data-category="Studio Shoot">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <img src="https://i.postimg.cc/JhSM6VyH/poster4.jpg" alt="Product Film" class="reel-poster-media" loading="lazy">
-            <video class="reel-video-preview" muted loop playsinline preload="none"></video>
-            <div class="reel-gradient-scrim"></div>
-            <div class="reel-card-content">
-              <div class="reel-card-meta">
-                <span class="reel-category">Studio Shoot</span>
-                <span class="reel-title">Product Film</span>
-              </div>
-              <div class="reel-play-btn">▶</div>
+          <!-- 03 Commercials & Automotive -->
+          <div class="service-editorial-row">
+            <div class="service-huge-number">03</div>
+            <div class="service-center-thumb">
+              <img src="assets/work-production-CdUKgkyP.jpg" alt="Commercials and Automotive">
+            </div>
+            <div class="service-right-detail">
+              <div class="service-sub-tag">Product & Brand Films</div>
+              <h3>Commercials & Automotive</h3>
+              <p>Luxury products and supercars deserve light that sells. From perfume and apparel to desert motorsport, we design practical setups that make your brand feel cinematic and expensive.</p>
             </div>
           </div>
 
-          <!-- Reel 4 -->
-          <div class="reel-card crosshair-box" 
-               data-video="https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel6.mp4"
-               data-title="Live Event Coverage"
-               data-category="Live Film">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <img src="https://i.postimg.cc/nL5F52Ys/poster6.png" alt="Event Coverage" class="reel-poster-media" loading="lazy">
-            <video class="reel-video-preview" muted loop playsinline preload="none"></video>
-            <div class="reel-gradient-scrim"></div>
-            <div class="reel-card-content">
-              <div class="reel-card-meta">
-                <span class="reel-category">Live Film</span>
-                <span class="reel-title">Event Coverage</span>
-              </div>
-              <div class="reel-play-btn">▶</div>
+          <!-- 04 Real Estate & Architecture -->
+          <div class="service-editorial-row">
+            <div class="service-huge-number">04</div>
+            <div class="service-center-thumb">
+              <img src="https://i.postimg.cc/G2542Qf7/poster11.jpg" alt="Real Estate Video">
+            </div>
+            <div class="service-right-detail">
+              <div class="service-sub-tag">Luxury Walkthroughs & Drone</div>
+              <h3>Real Estate & Architecture</h3>
+              <p>Cinematic villa walkthroughs, developer showreels, and FPV drone tours crafted specifically to convert high-net-worth real estate buyers in Dubai and internationally.</p>
             </div>
           </div>
 
-          <!-- Reel 5 -->
-          <div class="reel-card crosshair-box" 
-               data-video="https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel1.mp4"
-               data-title="Creative Reel"
-               data-category="Showreel">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <img src="https://i.postimg.cc/Pr5pspzD/poster1-(2).jpg" alt="Creative Reel" class="reel-poster-media" loading="lazy">
-            <video class="reel-video-preview" muted loop playsinline preload="none"></video>
-            <div class="reel-gradient-scrim"></div>
-            <div class="reel-card-content">
-              <div class="reel-card-meta">
-                <span class="reel-category">Showreel</span>
-                <span class="reel-title">Creative Reel</span>
-              </div>
-              <div class="reel-play-btn">▶</div>
+          <!-- 05 Post-Production -->
+          <div class="service-editorial-row">
+            <div class="service-huge-number">05</div>
+            <div class="service-center-thumb">
+              <img src="assets/hero-lens-BrQG37nx.jpg" alt="Post Production">
             </div>
-          </div>
-
-          <!-- Reel 6 -->
-          <div class="reel-card crosshair-box" 
-               data-video="https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel3.mp4"
-               data-title="Brand Story"
-               data-category="Narrative">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <img src="https://i.postimg.cc/jqFK2DYK/poster3.jpg" alt="Brand Story" class="reel-poster-media" loading="lazy">
-            <video class="reel-video-preview" muted loop playsinline preload="none"></video>
-            <div class="reel-gradient-scrim"></div>
-            <div class="reel-card-content">
-              <div class="reel-card-meta">
-                <span class="reel-category">Narrative</span>
-                <span class="reel-title">Brand Story</span>
-              </div>
-              <div class="reel-play-btn">▶</div>
+            <div class="service-right-detail">
+              <div class="service-sub-tag">Edit, Colour & Sound</div>
+              <h3>Post-Production Suite</h3>
+              <p>Editing is our native language. Pacing, DaVinci Resolve color grading, custom sound design, and master delivery in every required aspect ratio: 16:9, 9:16, and 1:1.</p>
             </div>
           </div>
 
@@ -986,239 +601,92 @@
     </section>
 
     <!-- ======================================================================
-         ( 05 ) AGGREGATOR PLATFORMS ECOSYSTEM
+         ( 05 ) PACKAGES (Rohan 3 Column Tiers)
          ====================================================================== -->
-    <section class="section-spacing border-section-top" id="platforms">
-      <div class="container">
-        
-        <div style="text-align: center; max-width: 720px; margin-inline: auto; margin-bottom: 36px;">
-          <div class="section-tag" style="justify-content: center;">
-            <span class="bracket">( 05 )</span>
-            <span class="bullet"></span>
-            <span>Platform Ecosystem</span>
-          </div>
-          <h2 style="font-size: var(--text-h2); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px;">
-            Platforms we actively scale and manage.
-          </h2>
-          <p style="font-size: var(--text-small); color: var(--text-muted);">
-            We maintain live integrations, catalog sync, and algorithmic ad placement across the region's largest consumer channels.
-          </p>
-        </div>
-
-        <div class="aggregator-grid">
-          <div class="aggregator-item crosshair-box">
-            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
-            <img src="assets/logo-talabat-D_6sUrFb.png" alt="Talabat" class="aggregator-logo">
-            <span class="aggregator-name">Talabat</span>
-          </div>
-          <div class="aggregator-item crosshair-box">
-            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
-            <img src="assets/logo-noon-DQjtJ7tV.png" alt="Noon" class="aggregator-logo">
-            <span class="aggregator-name">Noon</span>
-          </div>
-          <div class="aggregator-item crosshair-box">
-            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
-            <img src="assets/logo-deliveroo-D3T_CNKt.png" alt="Deliveroo" class="aggregator-logo">
-            <span class="aggregator-name">Deliveroo</span>
-          </div>
-          <div class="aggregator-item crosshair-box">
-            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
-            <img src="assets/logo-careem-oa58qM80.png" alt="Careem" class="aggregator-logo">
-            <span class="aggregator-name">Careem</span>
-          </div>
-          <div class="aggregator-item crosshair-box">
-            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
-            <img src="assets/logo-smiles-CqRFj0QV.png" alt="Smiles" class="aggregator-logo">
-            <span class="aggregator-name">Smiles</span>
-          </div>
-          <div class="aggregator-item crosshair-box">
-            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
-            <img src="assets/logo-keeta-Bg32Fq63.png" alt="Keeta" class="aggregator-logo">
-            <span class="aggregator-name">Keeta</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         ( 06 ) GROWTH PACKAGES & ENGAGEMENT MODELS (Rohan Inspired)
-         ====================================================================== -->
-    <section class="section-spacing border-section-top" id="packages">
-      <div class="container">
-        
-        <div class="services-header-wrap">
-          <div>
-            <div class="section-tag">
-              <span class="bracket">( 06 )</span>
-              <span class="bullet"></span>
-              <span>Growth Packages & Retainers</span>
-            </div>
-            <h2 style="font-size: var(--text-h1); font-weight: 800; letter-spacing: -0.03em;">
-              Engagement models built for high-growth velocity.
-            </h2>
-          </div>
-          <p style="font-size: var(--text-small); color: var(--text-muted); max-width: 320px;">
-            Choose a focused sprint or partner with our full-stack team for end-to-end performance and creative execution.
-          </p>
-        </div>
-
-        <div class="packages-grid">
-          
-          <!-- Package 1: Social Growth Sprint -->
-          <div class="package-card crosshair-box">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div>
-              <div class="package-tag">( 01 ) Social Sprint</div>
-              <h3 class="package-title">Social Growth Engine</h3>
-              <p class="package-desc">Short-form vertical video sprint for brands that need always-on content and organic community growth.</p>
-              
-              <ul class="package-features">
-                <li><span class="check">✓</span> Monthly content calendar & strategy</li>
-                <li><span class="check">✓</span> 15 to 30 high-converting vertical reels</li>
-                <li><span class="check">✓</span> Viral hook scripting & trend-jacking</li>
-                <li><span class="check">✓</span> Full in-house editing, captions & color</li>
-                <li><span class="check">✓</span> Community management & posting ops</li>
-              </ul>
-            </div>
-
-            <div class="package-footer">
-              <div class="package-price-wrap">
-                <span class="price-note">Engagement</span>
-                <span class="price-val">Monthly Retainer</span>
-              </div>
-              <a href="https://wa.me/971565533893?text=Hi%20Figo%20Media!%20I'm%20interested%20in%20the%20Social%20Growth%20Engine%20package." target="_blank" rel="noopener" class="btn-secondary">
-                <span>Book This</span> ↗
-              </a>
-            </div>
-          </div>
-
-          <!-- Package 2: Performance ROAS Engine (Featured) -->
-          <div class="package-card highlight crosshair-box">
-            <span class="package-badge-popular">MOST POPULAR</span>
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div>
-              <div class="package-tag">( 02 ) Performance ROAS</div>
-              <h3 class="package-title">Performance Ads Engine</h3>
-              <p class="package-desc">Data-driven paid media execution designed to scale ad spend profitably across Meta, TikTok, and Google.</p>
-              
-              <ul class="package-features">
-                <li><span class="check">✓</span> Multi-platform paid media management</li>
-                <li><span class="check">✓</span> Rapid creative A/B testing matrix</li>
-                <li><span class="check">✓</span> Full-funnel retargeting & DPA setup</li>
-                <li><span class="check">✓</span> Weekly ROAS attribution & CPA audits</li>
-                <li><span class="check">✓</span> Landing page conversion optimization (CRO)</li>
-              </ul>
-            </div>
-
-            <div class="package-footer">
-              <div class="package-price-wrap">
-                <span class="price-note">Engagement</span>
-                <span class="price-val">Base + Performance</span>
-              </div>
-              <a href="https://wa.me/971565533893?text=Hi%20Figo%20Media!%20I'm%20interested%20in%20the%20Performance%20Ads%20Engine%20package." target="_blank" rel="noopener" class="btn-brand-pill">
-                <span>Book This</span> ↗
-              </a>
-            </div>
-          </div>
-
-          <!-- Package 3: Full-Stack Growth Partner -->
-          <div class="package-card crosshair-box">
-            <span class="ch ch-tl">+</span>
-            <span class="ch ch-tr">+</span>
-            <span class="ch ch-bl">+</span>
-            <span class="ch ch-br">+</span>
-            <div>
-              <div class="package-tag">( 03 ) Signature Partner</div>
-              <h3 class="package-title">Full-Stack Growth</h3>
-              <p class="package-desc">Complete end-to-end partner embedding dedicated creative production, ads management, and aggregator ops.</p>
-              
-              <ul class="package-features">
-                <li><span class="check">✓</span> Everything in Social + Performance</li>
-                <li><span class="check">✓</span> On-location cinematic shoots in UAE</li>
-                <li><span class="check">✓</span> Aggregator ops (Talabat, Noon, Deliveroo)</li>
-                <li><span class="check">✓</span> Dedicated Creative Director & Media Buyer</li>
-                <li><span class="check">✓</span> Priority 24/7 Slack / WhatsApp channel</li>
-              </ul>
-            </div>
-
-            <div class="package-footer">
-              <div class="package-price-wrap">
-                <span class="price-note">Engagement</span>
-                <span class="price-val">Full Partner</span>
-              </div>
-              <a href="https://wa.me/971565533893?text=Hi%20Figo%20Media!%20I'm%20interested%20in%20the%20Full-Stack%20Growth%20Partner%20model." target="_blank" rel="noopener" class="btn-secondary">
-                <span>Book This</span> ↗
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======================================================================
-         ( 07 ) THE PROCESS (Execution Framework)
-         ====================================================================== -->
-    <section class="section-spacing border-section-top" id="process">
+    <section class="section-spacing" id="packages" style="border-top: 1px solid var(--border-line);">
       <div class="container">
         
         <div class="section-tag">
-          <span class="bracket">( 07 )</span>
+          <span class="bracket">( 05 )</span>
           <span class="bullet"></span>
-          <span>The Execution Framework</span>
+          <span>Engagement Packages</span>
         </div>
 
-        <h2 style="font-size: var(--text-h1); font-weight: 800; letter-spacing: -0.03em; max-width: 840px;">
-          Strategy, story, and shipping — in tight lockstep.
+        <h2 style="font-size: var(--text-h1); font-weight: 800; letter-spacing: -0.03em;">
+          Tailored engagement models for every stage of growth.
         </h2>
 
-        <div class="process-list">
+        <div class="packages-grid-row">
           
-          <div class="process-row">
-            <div class="process-step-num">01</div>
-            <div class="process-step-title">Discover & Audit</div>
-            <div class="process-step-desc">
-              We audit your historical ad performance, margin economics, CAC, current social reach, and competitors across the UAE and GCC to identify maximum leverage points.
+          <!-- Package 1 -->
+          <div class="package-col-box crosshair-box">
+            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
+            <div>
+              <div class="package-status-line">On Request</div>
+              <h3 class="package-tier-title">Social Sprint</h3>
+              <p class="package-tier-sub">Short-form vertical content for brands that post often and need consistent viral reach.</p>
+              
+              <ul class="package-checklist-wrap">
+                <li><span class="plus-dot">+</span> Monthly content plan & strategy</li>
+                <li><span class="plus-dot">+</span> 15 to 30 vertical reels (9:16)</li>
+                <li><span class="plus-dot">+</span> Hook-first scripting & captions</li>
+                <li><span class="plus-dot">+</span> In-house sound design & color grade</li>
+                <li><span class="plus-dot">+</span> Formatted for Instagram & TikTok</li>
+              </ul>
+            </div>
+
+            <div style="margin-top: 32px;">
+              <a href="https://wa.me/971565533893?text=Hi%20Figo%20Media!%20I'm%20interested%20in%20the%20Social%20Sprint%20package." target="_blank" rel="noopener" class="btn-editorial-link">
+                <span>Book This</span> ↗
+              </a>
             </div>
           </div>
 
-          <div class="process-row">
-            <div class="process-step-num">02</div>
-            <div class="process-step-title">Creative Strategy</div>
-            <div class="process-step-desc">
-              We script 10+ hook variations, storyboard cinematic angles, and align content frameworks tailored to buyer conversion triggers before shooting begins.
+          <!-- Package 2 -->
+          <div class="package-col-box crosshair-box" style="border-color: var(--color-brand); background: linear-gradient(180deg, rgba(0, 186, 204, 0.05) 0%, var(--bg-card) 100%);">
+            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
+            <div>
+              <div class="package-status-line">Most Popular</div>
+              <h3 class="package-tier-title">Commercial & Film</h3>
+              <p class="package-tier-sub">One hero commercial film for a flagship product launch, automotive sprint, or luxury villa.</p>
+              
+              <ul class="package-checklist-wrap">
+                <li><span class="plus-dot">+</span> Concept, moodboard & shot list</li>
+                <li><span class="plus-dot">+</span> Studio or on-location shoot in UAE</li>
+                <li><span class="plus-dot">+</span> Creative cinema lighting & rig setup</li>
+                <li><span class="plus-dot">+</span> DaVinci color grading & master audio</li>
+                <li><span class="plus-dot">+</span> 16:9, 9:16 and 1:1 multi-cut downs</li>
+              </ul>
+            </div>
+
+            <div style="margin-top: 32px;">
+              <a href="https://wa.me/971565533893?text=Hi%20Figo%20Media!%20I'm%20interested%20in%20the%20Commercial%20%26%20Film%20package." target="_blank" rel="noopener" class="btn-brand-solid">
+                <span>Book This</span> ↗
+              </a>
             </div>
           </div>
 
-          <div class="process-row">
-            <div class="process-step-num">03</div>
-            <div class="process-step-title">Produce & Cut</div>
-            <div class="process-step-desc">
-              Commercial films, product stills, and high-velocity social reels shot with 4K cinema gear and edited in-house with sound design and multi-ratio deliverables.
+          <!-- Package 3 -->
+          <div class="package-col-box crosshair-box">
+            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
+            <div>
+              <div class="package-status-line">Full Scale</div>
+              <h3 class="package-tier-title">Performance Partner</h3>
+              <p class="package-tier-sub">End-to-end partner embedding dedicated creative production with multi-platform paid ads.</p>
+              
+              <ul class="package-checklist-wrap">
+                <li><span class="plus-dot">+</span> Everything in Commercial & Social</li>
+                <li><span class="plus-dot">+</span> Paid Ads Management (Meta, Google, TikTok)</li>
+                <li><span class="plus-dot">+</span> Food/Retail Aggregator ops (Talabat, Noon)</li>
+                <li><span class="plus-dot">+</span> Dedicated Media Buyer & Creative Lead</li>
+                <li><span class="plus-dot">+</span> Weekly attribution & ROAS reporting</li>
+              </ul>
             </div>
-          </div>
 
-          <div class="process-row">
-            <div class="process-step-num">04</div>
-            <div class="process-step-title">Activate & Scale</div>
-            <div class="process-step-desc">
-              Deploy ads across Meta, TikTok, and Google, initiate aggregator top-spot bidding, and syndicate vertical content across organic algorithms with aggressive A/B testing.
-            </div>
-          </div>
-
-          <div class="process-row">
-            <div class="process-step-num">05</div>
-            <div class="process-step-title">Iterate & Compound</div>
-            <div class="process-step-desc">
-              Weekly reporting, fatigue monitoring, cutting underperforming ads, scaling top 5% winning creatives, and expanding your reach into new channels.
+            <div style="margin-top: 32px;">
+              <a href="https://wa.me/971565533893?text=Hi%20Figo%20Media!%20I'm%20interested%20in%20the%20Performance%20Partner%20model." target="_blank" rel="noopener" class="btn-editorial-link">
+                <span>Book This</span> ↗
+              </a>
             </div>
           </div>
 
@@ -1228,207 +696,214 @@
     </section>
 
     <!-- ======================================================================
-         ( 08 ) FAQ SECTION (Rohan Inspired Accordion)
+         ( 06 ) ARCHIVE (Rohan Project List with Hover Thumbnails - 00:19)
          ====================================================================== -->
-    <section class="section-spacing border-section-top" id="faq">
+    <section class="section-spacing" id="archive" style="border-top: 1px solid var(--border-line);">
       <div class="container">
         
-        <div class="faq-wrap">
-          <div class="faq-lead">
-            <div class="section-tag">
-              <span class="bracket">( 08 )</span>
-              <span class="bullet"></span>
-              <span>FAQ</span>
-            </div>
-            <h3>Frequently Answered.</h3>
-            <p>Everything you need to know about partnering with Figo Media for performance marketing, social growth, and production.</p>
+        <div class="section-tag">
+          <span class="bracket">( 06 )</span>
+          <span class="bullet"></span>
+          <span>Project Archive</span>
+        </div>
+
+        <h2 style="font-size: var(--text-h1); font-weight: 800; letter-spacing: -0.03em;">
+          Select Production & Campaign Index.
+        </h2>
+
+        <div class="archive-list-wrap">
+          
+          <div class="archive-item-row" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel11.MP4')">
+            <span class="archive-year">2026</span>
+            <span class="archive-name">Palm Jumeirah Luxury Villa Architecture</span>
+            <div class="archive-thumb-box"><img src="https://i.postimg.cc/G2542Qf7/poster11.jpg" alt="Real Estate"></div>
           </div>
 
-          <div class="faq-list">
-            
-            <div class="faq-item active">
-              <div class="faq-question">
-                <h4>What makes Figo Media different from a typical marketing agency?</h4>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>We are a Performance & Social Growth Agency — which means we combine high-end in-house cinema production with algorithmic media buying and aggregator operations. We don't just create pretty videos; we engineer assets strictly to lower your CPA, maximize ROAS, and scale revenue across both digital ads and food/retail platforms like Talabat and Noon.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question">
-                <h4>What kind of ad budgets do you work with?</h4>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>We work with growth-stage brands spending anywhere from \$5,000 to \$100,000+ per month across Meta, TikTok, and Google. Our testing frameworks are designed to identify profitable ROAS thresholds before scaling aggressive budget injections.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question">
-                <h4>Do you manage food delivery and grocery aggregator platforms?</h4>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>Yes. We provide complete end-to-end management for Talabat, Deliveroo, Noon, Careem, Smiles, and Keeta — including menu listing optimization, dynamic pricing, in-app ad promotions, and financial reconciliation.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question">
-                <h4>How fast is the turnaround from onboarding to campaign launch?</h4>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>Typically 7 to 10 business days. During this sprint, we complete the audit, deliver the creative strategy deck, shoot initial creative batches, and launch the targeted ad campaigns with full pixel tracking.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <div class="faq-question">
-                <h4>Who owns the creative assets and raw footage produced?</h4>
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                <p>You own 100% of the rights to all final creatives, video cuts, product photos, and ad copies. We deliver full-resolution master files ready for multi-channel usage.</p>
-              </div>
-            </div>
-
+          <div class="archive-item-row" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel10.mp4')">
+            <span class="archive-year">2026</span>
+            <span class="archive-name">Dubai Supercar & Automotive Film</span>
+            <div class="archive-thumb-box"><img src="assets/work-production-CdUKgkyP.jpg" alt="Automotive"></div>
           </div>
+
+          <div class="archive-item-row" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel7.mp4')">
+            <span class="archive-year">2026</span>
+            <span class="archive-name">Sterling Luxury Fragrance Commercial</span>
+            <div class="archive-thumb-box"><img src="https://i.postimg.cc/nzxDDCvL/poster7.jpg" alt="Commercial"></div>
+          </div>
+
+          <div class="archive-item-row" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel6.mp4')">
+            <span class="archive-year">2026</span>
+            <span class="archive-name">NextDoorParty Event Coverage</span>
+            <div class="archive-thumb-box"><img src="https://i.postimg.cc/nL5F52Ys/poster6.png" alt="Event"></div>
+          </div>
+
+          <div class="archive-item-row" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel9.mp4')">
+            <span class="archive-year">2025</span>
+            <span class="archive-name">Polaris & Sherco Red Sands Action</span>
+            <div class="archive-thumb-box"><img src="https://i.postimg.cc/gjnTkmDD/IMG-7184.jpg" alt="Motorsport"></div>
+          </div>
+
+          <div class="archive-item-row" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel4.mp4')">
+            <span class="archive-year">2025</span>
+            <span class="archive-name">Product Commercial Studio Film</span>
+            <div class="archive-thumb-box"><img src="https://i.postimg.cc/JhSM6VyH/poster4.jpg" alt="Product"></div>
+          </div>
+
         </div>
 
       </div>
     </section>
 
     <!-- ======================================================================
-         ( 09 ) DIRECT CONSULTATION & CONTACT FOOTER
+         ( 07 ) CINEMATIC BANNER / DESERT QUOTE (Rohan Signature 00:21)
          ====================================================================== -->
-    <section class="section-spacing border-section-top contact-section" id="contact">
+    <section class="cinematic-quote-banner crosshair-box">
+      <div class="cinematic-quote-scrim"></div>
+      
+      <span class="ch" style="top: 20%; left: 8%;">+</span>
+      <span class="ch" style="top: 20%; right: 8%;">+</span>
+      <span class="ch" style="bottom: 20%; left: 8%;">+</span>
+      <span class="ch" style="bottom: 20%; right: 8%;">+</span>
+
+      <div class="cinematic-quote-content">
+        <h2 class="cinematic-quote-text">
+          Minimal Setups. Maximum Cinema. — We Create. We Perform. We Grow.
+        </h2>
+        <a href="https://wa.me/971565533893?text=Hi%20Figo%20Media!%20I'd%20like%20to%20book%20a%20shoot%20or%20consultation." target="_blank" rel="noopener" class="btn-brand-solid">
+          <span>Book a Consultation</span> ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ( 08 ) FAQ & BEHIND THE FRAME (Rohan 00:24)
+         ====================================================================== -->
+    <section class="section-spacing" id="faq" style="border-top: 1px solid var(--border-line);">
       <div class="container">
         
-        <div class="contact-card-box crosshair-box">
-          <span class="ch ch-tl">+</span>
-          <span class="ch ch-tr">+</span>
-          <span class="ch ch-bl">+</span>
-          <span class="ch ch-br">+</span>
-          
-          <div class="contact-grid">
-            
-            <!-- Left Editorial Info -->
-            <div>
-              <div class="section-tag">
-                <span class="bracket">( 09 )</span>
-                <span class="bullet"></span>
-                <span>Direct Access // Dubai</span>
-              </div>
-              <h2 class="contact-heading">
-                Ready to accelerate your performance & social growth?
-              </h2>
-              <p class="contact-sub">
-                Tell us about your brand. We will audit your current setup and return with a customized growth roadmap and creative strategy within 48 hours.
-              </p>
+        <div class="section-tag">
+          <span class="bracket">( 08 )</span>
+          <span class="bullet"></span>
+          <span>Behind the Frame & FAQ</span>
+        </div>
 
-              <div class="contact-details-list">
-                <div class="contact-detail-row">
-                  <span class="lbl">WhatsApp</span>
-                  <a href="https://wa.me/971565533893?text=Hi%20Figo%20Media!%20I'd%20like%20to%20discuss%20a%20growth%20project." target="_blank" rel="noopener">+971 56 553 3893</a>
-                </div>
-                <div class="contact-detail-row">
-                  <span class="lbl">Phone</span>
-                  <a href="tel:+971565533893">+971 56 553 3893</a>
-                </div>
-                <div class="contact-detail-row">
-                  <span class="lbl">Location</span>
-                  <span>Dubai, United Arab Emirates</span>
-                </div>
-                <div class="contact-detail-row">
-                  <span class="lbl">Response</span>
-                  <span class="text-brand">Within 24 Hours</span>
-                </div>
+        <div class="faq-frame-grid">
+          
+          <!-- Left: Showreel 2026 Interactive Card -->
+          <div>
+            <div class="showreel-feature-card" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel1.mp4')">
+              <img src="assets/work-production-CdUKgkyP.jpg" alt="Play Showreel">
+              <div class="showreel-play-overlay">
+                <span>▶ Play Showreel 2026</span>
+              </div>
+            </div>
+            <p style="font-size: var(--text-small); color: var(--text-muted); margin-top: 14px;">
+              From the other side of the lens — a 60-second compilation of recent commercial, automotive, real estate, and lifestyle productions across the UAE.
+            </p>
+          </div>
+
+          <!-- Right: Accordion List -->
+          <div class="faq-accordion-list">
+            
+            <div class="faq-row active">
+              <div class="faq-q-bar">
+                <h4>What kind of video projects do you take on?</h4>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-ans-box">
+                <p>We produce social reels, automotive and motorsport films, luxury real estate villa tours, commercial product shoots, and paid ad creatives for brands wanting a premium aesthetic coupled with algorithmic conversion performance.</p>
               </div>
             </div>
 
-            <!-- Right Quick Consultation Form -->
-            <div class="quick-form">
-              <form id="consultationForm">
-                <div class="form-group">
-                  <label for="formName">Your Name</label>
-                  <input type="text" id="formName" class="form-control" placeholder="e.g. Alexander Vance" required>
-                </div>
-                <div class="form-group">
-                  <label for="formBrand">Brand / Company Name</label>
-                  <input type="text" id="formBrand" class="form-control" placeholder="e.g. Maison Fragrance" required>
-                </div>
-                <div class="form-group">
-                  <label for="formService">Primary Objective</label>
-                  <select id="formService" class="form-control">
-                    <option value="Performance Marketing & ROAS">Performance Marketing & ROAS</option>
-                    <option value="Social Media & Vertical Reels">Social Media & Vertical Reels</option>
-                    <option value="Cinematic Commercial / Shoot">Cinematic Commercial / Shoot</option>
-                    <option value="E-Com & Aggregator Operations">E-Com & Aggregator Operations</option>
-                    <option value="Full-Stack Growth Partnership">Full-Stack Growth Partnership</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="formMessage">Brief Project Scope</label>
-                  <textarea id="formMessage" class="form-control" placeholder="Share your current monthly ad spend or growth goals..."></textarea>
-                </div>
-                <button type="submit" class="btn-submit">
-                  Dispatch via WhatsApp ↗
-                </button>
-              </form>
+            <div class="faq-row">
+              <div class="faq-q-bar">
+                <h4>How do you deliver aspect ratios (16:9 vs 9:16)?</h4>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-ans-box">
+                <p>We shoot specifically with multi-framing guidelines. Every campaign is delivered in native 9:16 vertical for TikTok and Instagram Reels, 16:9 widescreen for website heroes, YouTube, and broadcast, plus 1:1 square for feed carousels.</p>
+              </div>
+            </div>
+
+            <div class="faq-row">
+              <div class="faq-q-bar">
+                <h4>Do we need a massive crew or huge budget?</h4>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-ans-box">
+                <p>No. Our methodology is built on minimal, clever setups — practical lighting, motors, smoke, and cinema cameras. The crew only scales when the story and scale demand it, keeping production nimble and cost-effective.</p>
+              </div>
+            </div>
+
+            <div class="faq-row">
+              <div class="faq-q-bar">
+                <h4>Do you manage food and retail delivery aggregators too?</h4>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-ans-box">
+                <p>Yes. Figo Media manages end-to-end operations across Talabat, Noon, Deliveroo, Careem, Smiles, and Keeta — including menu optimization, dynamic pricing, in-app ad bidding, and financial reconciliation.</p>
+              </div>
             </div>
 
           </div>
-
-          <!-- Bottom Footer Bar -->
-          <footer class="footer-wrap">
-            <div>
-              <span>© 2026 FIGO MEDIA. ALL RIGHTS RESERVED.</span>
-              <span style="margin-left: 12px; color: var(--color-brand);">THE PERFORMANCE & SOCIAL GROWTH AGENCY</span>
-            </div>
-            
-            <div class="footer-socials">
-              <a href="https://wa.me/971565533893" target="_blank" rel="noopener">WhatsApp</a>
-              <a href="tel:+971565533893">Direct Call</a>
-              <a href="#hero">Back to Top ↑</a>
-            </div>
-          </footer>
 
         </div>
 
       </div>
     </section>
+
+    <!-- ======================================================================
+         ( 09 ) FOOTER (Rohan 00:25 - 00:27 with Bottom Giant Wordmark)
+         ====================================================================== -->
+    <footer class="footer-editorial-section" id="contact">
+      <div class="container">
+        
+        <div class="footer-top-grid">
+          <div>
+            <h2 class="footer-cta-heading">Let's scale something extraordinary.</h2>
+            <a href="mailto:info@figomedia.ae" class="footer-contact-link">info@figomedia.ae</a>
+            <div>
+              <a href="https://wa.me/971565533893?text=Hi%20Figo%20Media!%20I'd%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" class="btn-brand-solid">
+                <span>Contact via WhatsApp</span> ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-nav-col">
+            <a href="#hero"><span>Home</span> <span class="font-mono">01</span></a>
+            <a href="#work"><span>Work</span> <span class="font-mono">02</span></a>
+            <a href="#about"><span>About</span> <span class="font-mono">03</span></a>
+            <a href="#services"><span>Services</span> <span class="font-mono">04</span></a>
+            <a href="#packages"><span>Packages</span> <span class="font-mono">05</span></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener"><span>Instagram</span> <span>↗</span></a>
+          </div>
+        </div>
+
+        <!-- Rohan Signature Giant Wordmark Across Bottom Footer -->
+        <div class="footer-giant-wordmark-row">
+          <div class="footer-wordmark">FIGO MEDIA</div>
+          <div class="footer-bottom-meta">
+            <span>© 2026 FIGO MEDIA</span>
+            <span>DUBAI, UAE</span>
+            <span id="footerClock">--:-- GST</span>
+          </div>
+        </div>
+
+      </div>
+    </footer>
 
   </main>
 
-  <!-- ======================================================================
-       INTERACTIVE VIDEO MODAL
-       ====================================================================== -->
+  <!-- Video Playback Modal (Supports both 16:9 Landscape & 9:16 Portrait) -->
   <div class="modal-overlay" id="videoModal">
-    <div class="modal-container" style="max-width: 520px; background: #000; border-color: var(--color-brand);">
-      <button class="modal-close-btn" id="videoModalClose">✕</button>
-      <div class="video-modal-body">
+    <div class="modal-box">
+      <button class="modal-close-trigger" id="videoModalClose">✕</button>
+      <div class="modal-video-viewport">
         <video id="modalVideoPlayer" controls playsinline></video>
       </div>
     </div>
   </div>
 
-  <!-- ======================================================================
-       CASE STUDY DETAIL MODAL
-       ====================================================================== -->
-  <div class="modal-overlay" id="caseModal">
-    <div class="modal-container">
-      <button class="modal-close-btn" id="caseModalClose">✕</button>
-      <div style="padding: clamp(24px, 4vw, 48px);" id="caseModalContent">
-        <!-- Dynamic injection from app.js -->
-      </div>
-    </div>
-  </div>
-
-  <!-- Scripts -->
   <script src="app.js"></script>
 </body>
 </html>
