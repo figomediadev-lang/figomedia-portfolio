@@ -1,6 +1,6 @@
 /* ==========================================================================
    FIGO MEDIA — THE PERFORMANCE & SOCIAL GROWTH AGENCY
-   Aesthetic Architecture directly inspired by Rohan Nambiar's Portfolio
+   Bespoke Editorial & Cinematic Video Architecture
    Enhanced with true Landscape (16:9) & Portrait (9:16) Video Architecture
    Categories: Reels, Content Creation, Events, Motorsport, Real Estate
    ========================================================================== */
@@ -168,7 +168,7 @@ body {
 }
 
 /* ==========================================================================
-   HEADER NAVIGATION (Rohan Styled)
+   HEADER NAVIGATION
    ========================================================================== */
 .header-nav {
   position: fixed;
@@ -263,7 +263,7 @@ body {
   gap: 18px;
 }
 
-/* Floating "Meet the Agency" Card (Rohan signature top-right element) */
+/* Floating "Meet the Agency" Card */
 .floating-agency-badge {
   display: flex;
   align-items: center;
@@ -369,7 +369,7 @@ body {
 }
 
 /* ==========================================================================
-   HERO SECTION (Rohan Style with Massive Wordmark & Diagonal Bottom)
+   HERO SECTION (Editorial Brand Architecture)
    ========================================================================== */
 .hero-editorial-wrap {
   position: relative;
@@ -532,7 +532,7 @@ body {
   margin-right: 4px;
 }
 
-/* Massive Rohan-Style Wordmark Across Bottom */
+/* Signature Brand Wordmark Across Bottom */
 .hero-giant-wordmark-bar {
   position: relative;
   z-index: 2;
@@ -563,7 +563,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* Rohan's Signature Diagonal Bottom Cut */
+/* Editorial Diagonal Bottom Cut */
 .diagonal-cut-bottom {
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3.5vw), 0 100%);
 }
@@ -695,7 +695,7 @@ body {
 }
 
 /* ==========================================================================
-   ( 02 ) CURRENTLY / REC (Now) (Rohan's Signature Cinema Feature)
+   ( 02 ) CURRENTLY / REC (Now) Cinema Production Tracker
    ========================================================================== */
 .rec-banner-section {
   position: relative;
@@ -899,15 +899,126 @@ body {
   overflow: hidden;
 }
 
-.landscape-viewport img, .landscape-viewport video {
+.portrait-viewport {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 14;
+  background: #000;
+  overflow: hidden;
+}
+
+.landscape-viewport img, .landscape-viewport video,
+.portrait-viewport img, .portrait-viewport video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.6s var(--ease-editorial);
+  display: block;
 }
 
-.work-card-landscape:hover .landscape-viewport img {
-  transform: scale(1.04);
+.work-card-landscape:hover .landscape-viewport img,
+.work-card-landscape:hover .landscape-viewport video,
+.work-card-portrait:hover .portrait-viewport img,
+.work-card-portrait:hover .portrait-viewport video {
+  transform: scale(1.03);
+}
+
+/* Card Action Overlay for Live Videos */
+.card-action-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 9, 10, 0.45) 0%, transparent 35%, rgba(8, 9, 10, 0.8) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 14px;
+  pointer-events: none;
+  z-index: 3;
+  transition: background 0.3s ease;
+}
+
+.work-card-landscape:hover .card-action-overlay,
+.work-card-portrait:hover .card-action-overlay {
+  background: linear-gradient(180deg, rgba(8, 9, 10, 0.55) 0%, transparent 30%, rgba(8, 9, 10, 0.9) 100%);
+}
+
+.card-action-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card-action-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #fff;
+  background: rgba(12, 13, 15, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  text-transform: uppercase;
+}
+
+.live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulseGreen 1.8s infinite;
+}
+
+.card-action-btns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  pointer-events: auto;
+}
+
+.card-sound-toggle, .card-fullscreen-btn {
+  pointer-events: auto;
+  background: rgba(18, 19, 23, 0.88);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.card-sound-toggle:hover, .card-fullscreen-btn:hover {
+  background: var(--color-brand);
+  color: #000;
+  border-color: var(--color-brand);
+  transform: translateY(-1px);
+}
+
+.card-sound-toggle.sound-active {
+  background: var(--color-brand);
+  color: #000;
+  border-color: var(--color-brand);
+  box-shadow: 0 0 14px rgba(var(--color-brand-rgb), 0.45);
 }
 
 /* Portrait Card: 9:16 tall vertical reel spanning 4 or 5 columns */
@@ -927,25 +1038,6 @@ body {
 .work-card-portrait:hover {
   transform: translateY(-4px);
   border-color: var(--color-brand);
-}
-
-.portrait-viewport {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 9 / 14;
-  background: #000;
-  overflow: hidden;
-}
-
-.portrait-viewport img, .portrait-viewport video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s var(--ease-editorial);
-}
-
-.work-card-portrait:hover .portrait-viewport img {
-  transform: scale(1.04);
 }
 
 /* Common Card Meta Elements */
@@ -1050,7 +1142,6 @@ body {
 
 /* ==========================================================================
    ( 04 ) SERVICES (Numbered Large Rows with Center Preview)
-   Directly matching Rohan's 00:15 - 00:18 section
    ========================================================================== */
 .services-editorial-list {
   display: flex;
@@ -1130,7 +1221,7 @@ body {
 }
 
 /* ==========================================================================
-   ( 05 ) PACKAGES (Rohan 3 Column Tiers)
+   ( 05 ) PACKAGES (Growth Engagement Models)
    ========================================================================== */
 .packages-grid-row {
   display: grid;
@@ -1198,7 +1289,7 @@ body {
 }
 
 /* ==========================================================================
-   ( 06 ) ARCHIVE (Rohan Project List with Hover Thumbnails)
+   ( 06 ) ARCHIVE (Campaign Index with Hover Thumbnails)
    ========================================================================== */
 .archive-list-wrap {
   margin-top: 40px;
@@ -1249,7 +1340,7 @@ body {
 }
 
 /* ==========================================================================
-   ( 07 ) CINEMATIC BANNER / DESERT QUOTE (Rohan Signature 00:21)
+   ( 07 ) CINEMATIC BANNER / PRODUCTION MANIFESTO
    ========================================================================== */
 .cinematic-quote-banner {
   position: relative;
@@ -1306,14 +1397,17 @@ body {
   background: #000;
 }
 
-.showreel-feature-card img {
+.showreel-feature-card img,
+.showreel-feature-card video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+  display: block;
 }
 
-.showreel-feature-card:hover img {
+.showreel-feature-card:hover img,
+.showreel-feature-card:hover video {
   transform: scale(1.05);
 }
 
@@ -1385,7 +1479,7 @@ body {
 }
 
 /* ==========================================================================
-   ( 09 ) FOOTER (Rohan 00:25 - 00:27 with Bottom Giant Wordmark)
+   ( 09 ) FOOTER (Bottom Giant Wordmark & Contact Meta)
    ========================================================================== */
 .footer-editorial-section {
   position: relative;
@@ -1501,38 +1595,78 @@ body {
 
 .modal-box {
   position: relative;
-  background: #000;
-  border: 1px solid var(--color-brand);
-  border-radius: 8px;
+  background: #090a0d;
+  border: 1px solid var(--border-line-hover);
+  border-radius: 10px;
   max-width: 960px;
   width: 100%;
-  max-height: 90vh;
+  max-height: 92vh;
   overflow: hidden;
-  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.95), 0 0 30px rgba(var(--color-brand-rgb), 0.15);
+  display: flex;
+  flex-direction: column;
+  transition: max-width 0.3s ease;
+}
+
+.modal-box.landscape-mode {
+  max-width: 1080px;
+}
+
+.modal-box.portrait-mode {
+  max-width: 440px;
+}
+
+.modal-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border-line);
+  background: rgba(15, 16, 20, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+.modal-meta-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.modal-category-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-brand);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.modal-film-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.01em;
 }
 
 .modal-close-trigger {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
   border: 1px solid var(--border-line);
   color: #fff;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
-  z-index: 10;
   transition: all var(--transition-fast);
 }
 
 .modal-close-trigger:hover {
   background: var(--color-brand);
   color: #000;
+  border-color: var(--color-brand);
+  transform: rotate(90deg);
 }
 
 .modal-video-viewport {
@@ -1541,12 +1675,14 @@ body {
   align-items: center;
   justify-content: center;
   background: #000;
+  position: relative;
 }
 
 .modal-video-viewport video {
-  max-width: 100%;
+  width: 100%;
   max-height: 80vh;
   object-fit: contain;
+  display: block;
 }
 
 /* Responsive adjustments */

@@ -19,7 +19,7 @@
   <div class="ambient-glow ambient-hero"></div>
   <div class="ambient-glow ambient-mid"></div>
 
-  <!-- Header Navigation (Rohan Styled with Meet Agency Badge) -->
+  <!-- Header Navigation -->
   <header class="header-nav">
     <div class="container">
       <div class="nav-inner">
@@ -87,7 +87,7 @@
 
   <main>
     <!-- ======================================================================
-         HERO SECTION (Rohan's Exact Aesthetic with Massive Wordmark & Diagonals)
+         HERO SECTION (Editorial Brand Architecture with Signature Wordmark)
          ====================================================================== -->
     <section class="hero-editorial-wrap diagonal-cut-bottom" id="hero">
       
@@ -131,13 +131,14 @@
 
       </div>
 
-      <!-- Bottom Category Nav & Clock (Rohan style) -->
+      <!-- Bottom Category Navigation Strip -->
       <div class="container">
         <div class="hero-bottom-category-strip">
           <a href="#work" onclick="setCategoryFilter('reels')"><span class="num">01 /</span> Social Reels</a>
           <a href="#work" onclick="setCategoryFilter('automotive')"><span class="num">02 /</span> Motorsport & Auto</a>
-          <a href="#work" onclick="setCategoryFilter('realestate')"><span class="num">03 /</span> Real Estate & Luxury</a>
-          <a href="#work" onclick="setCategoryFilter('content')"><span class="num">04 /</span> Commercials & Content</a>
+          <a href="#work" onclick="setCategoryFilter('content')"><span class="num">03 /</span> Commercials & Corporate</a>
+          <a href="#work" onclick="setCategoryFilter('events')"><span class="num">04 /</span> Events & Festivals</a>
+          <a href="#work" onclick="setCategoryFilter('realestate')"><span class="num">05 /</span> Real Estate & Luxury</a>
         </div>
       </div>
 
@@ -152,7 +153,7 @@
     </section>
 
     <!-- ======================================================================
-         ( 01 ) ABOUT & MANIFESTO (Light Editorial Contrast Section - Rohan Style)
+         ( 01 ) ABOUT & PHILOSOPHY (Creative Intent & Performance Engineering)
          ====================================================================== -->
     <section class="light-editorial-section diagonal-cut-top" id="about">
       <div class="container">
@@ -244,7 +245,7 @@
     </section>
 
     <!-- ======================================================================
-         ( 02 ) CURRENTLY / REC (Now) (Rohan's Exact Cinema Feature)
+         ( 02 ) CURRENTLY / REC (Now)
          ====================================================================== -->
     <section class="rec-banner-section" id="currently">
       <div class="container">
@@ -261,20 +262,20 @@
           </div>
 
           <div class="rec-now-corner">(Now)</div>
-          <div class="rec-tc-corner" id="timecodeDisplay">TC 13:51:39:22</div>
+          <div class="rec-tc-corner" id="timecodeDisplay">TC 14:28:19:12</div>
 
-          <div class="rec-eyebrow">Currently scaling campaigns with</div>
-          <h2 class="rec-client-title">Sterling Luxury Lifestyle</h2>
-          <div class="rec-project-sub">Armaf Fragrance & Automotive Sprint II</div>
+          <div class="rec-eyebrow">Currently in production & scaling across Dubai</div>
+          <h2 class="rec-client-title">BMW M Performance & HunterHood Live</h2>
+          <div class="rec-project-sub">Automotive Sprint II & Festival Main Stage Master</div>
 
-          <button class="btn-play-rec" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel7.mp4')">
-            <span>▶ Play Film</span>
+          <button class="btn-play-rec" onclick="openVideoPlayer('assets/videos/hunterhood-festival-full.mp4', '16:9', 'HunterHood Live Festival // Main Stage Aftermovie', 'Events & Festivals')">
+            <span>▶ Play Hero Film</span>
           </button>
 
           <div class="rec-previously-links">
-            <span>▶ Previously — Wildcraft UAE</span>
-            <span>▶ Previously — Polaris Desert Action</span>
-            <span>▶ Previously — Talabat Top-Spot</span>
+            <span onclick="openVideoPlayer('assets/videos/hds-corporate-summit-full.mp4', '16:9', 'Human Development Solutions DMCC // Executive Summit', 'Corporate Commercials')" style="cursor: pointer;">▶ Human Development Solutions DMCC</span>
+            <span onclick="openVideoPlayer('assets/videos/bmw-m2-dawn-full.mp4', '9:16', 'BMW M Performance // 2°C Dawn Run Hook', 'Motorsport & Auto')" style="cursor: pointer;">▶ BMW M Dawn Run</span>
+            <span onclick="openVideoPlayer('assets/videos/fitness-activewear-full.mp4', '9:16', 'Apex Activewear // High-Velocity Gym Hook', 'Social Reels')" style="cursor: pointer;">▶ Apex Activewear Sprint</span>
           </div>
         </div>
 
@@ -283,14 +284,13 @@
 
     <!-- ======================================================================
          ( 03 ) SELECTED WORK & CATEGORIES
-         True Landscape (16:9) & Portrait (9:16) Display Architecture!
-         Categories: Reels & Hooks, Automotive & Motorsport, Real Estate,
-                     Content Creation, Events & Lifestyle
+         Live Autoplaying Videos in Native 16:9 Landscape & 9:16 Portrait Containers
+         Categories: Reels, Motorsport, Corporate & Content, Events, Real Estate
          ====================================================================== -->
     <section class="work-section-wrap" id="work">
       <div class="container">
         
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; flex-wrap: wrap; gap: 20px;">
           <div>
             <div class="section-tag">
               <span class="bracket">( 03 )</span>
@@ -301,92 +301,320 @@
               Recent Work, Categorized by Format & Intent.
             </h2>
           </div>
-          <p style="font-size: var(--text-small); color: var(--text-muted); max-width: 340px;">
-            Landscape commercial films displayed in widescreen 16:9; viral vertical reels displayed in native 9:16 portrait. Hover to preview motion, click to play.
+          <p style="font-size: var(--text-small); color: var(--text-muted); max-width: 360px;">
+            Widescreen commercials rendered in native 16:9; high-tempo viral reels engineered in 9:16 vertical. All videos playing live — tap audio icon to unmute or click to expand to full cinema screen.
           </p>
         </div>
 
-        <!-- Filter Pill Tabs Matching User's Required Categories -->
+        <!-- Filter Pill Tabs Matching Required Categories -->
         <div class="work-filter-bar">
           <button class="filter-btn active" data-filter="all">All Work [08]</button>
           <button class="filter-btn" data-filter="reels">Social Reels (9:16)</button>
-          <button class="filter-btn" data-filter="automotive">Motorsport & Auto (16:9)</button>
-          <button class="filter-btn" data-filter="realestate">Real Estate & Luxury (16:9)</button>
-          <button class="filter-btn" data-filter="content">Content Creation (9:16)</button>
-          <button class="filter-btn" data-filter="events">Events & Nightlife (16:9)</button>
+          <button class="filter-btn" data-filter="automotive">Motorsport & Auto</button>
+          <button class="filter-btn" data-filter="content">Commercials & Corporate</button>
+          <button class="filter-btn" data-filter="events">Events & Festivals</button>
+          <button class="filter-btn" data-filter="realestate">Real Estate & Luxury</button>
         </div>
 
         <!-- Dynamic Work Grid with Native Landscape & Portrait Containers -->
         <div class="work-grid-masonry">
           
-          <!-- 1. AUTOMOTIVE & MOTORSPORT (Landscape 16:9) -->
-          <div class="work-card-landscape crosshair-box" data-category="automotive" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel10.mp4')">
+          <!-- 1. HUNTERHOOD FESTIVAL (16:9 Landscape - Events & Festivals) -->
+          <div class="work-card-landscape crosshair-box" data-category="events" onclick="openVideoPlayer('assets/videos/hunterhood-festival-full.mp4', '16:9', 'HunterHood Live Festival // Main Stage Aftermovie', 'Events & Festivals')">
             <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
             <div class="landscape-viewport">
-              <span class="card-category-tag">Motorsport & Auto</span>
-              <span class="card-aspect-badge">16:9 Landscape</span>
-              <img src="assets/work-production-CdUKgkyP.jpg" alt="Automotive Film">
+              <video class="card-live-video"
+                     src="assets/videos/hunterhood-festival-loop.mp4"
+                     poster="assets/posters/hunterhood-festival.jpg"
+                     autoplay loop muted playsinline preload="metadata">
+              </video>
+              <div class="card-action-overlay">
+                <div class="card-action-top">
+                  <span class="card-category-tag">Events & Festivals</span>
+                  <span class="card-aspect-badge">16:9 Landscape</span>
+                </div>
+                <div class="card-action-bottom">
+                  <span class="live-badge"><span class="live-dot"></span> LIVE FILM</span>
+                  <div class="card-action-btns">
+                    <button class="card-sound-toggle" aria-label="Toggle Sound" onclick="toggleCardSound(this, event)">
+                      <svg class="sound-icon-muted" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                      <svg class="sound-icon-unmuted" style="display:none;" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                      <span class="sound-label">Audio</span>
+                    </button>
+                    <span class="card-fullscreen-btn">Full Cinema ↗</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="card-info-pane">
               <div>
                 <div class="card-title-row">
-                  <h3 class="card-work-title">Automotive Night Sprint & Supercars</h3>
+                  <h3 class="card-work-title">HunterHood Live Festival // Main Stage Aftermovie</h3>
                   <span class="card-arrow-icon">▶</span>
                 </div>
                 <p class="card-work-desc">
-                  High-speed cinematic automotive film shot on location in Dubai. Featuring practical rig lighting, rolling camera tracking, and roaring anamorphic sound design.
+                  High-octane live music festival production featuring multi-cam stage coverage, coordinated lighting & pyrotechnic arrays, massive crowd energy, and festival sound design.
                 </p>
               </div>
               <div class="card-stats-pillbar">
                 <div class="stat-item"><span class="val">16:9 4K</span><span class="lbl">Cinema Master</span></div>
-                <div class="stat-item"><span class="val">Sound Cut</span><span class="lbl">In-House Mix</span></div>
-                <div class="stat-item"><span class="val">Commercial</span><span class="lbl">Broadcast Ready</span></div>
+                <div class="stat-item"><span class="val">Multi-Cam</span><span class="lbl">Stage Coverage</span></div>
+                <div class="stat-item"><span class="val">25,000+</span><span class="lbl">Crowd Energy</span></div>
               </div>
             </div>
           </div>
 
-          <!-- 2. SOCIAL REELS (Portrait 9:16) -->
-          <div class="work-card-portrait crosshair-box" data-category="reels" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel7.mp4')">
+          <!-- 2. BMW M PERFORMANCE (9:16 Portrait - Motorsport & Auto) -->
+          <div class="work-card-portrait crosshair-box" data-category="automotive" onclick="openVideoPlayer('assets/videos/bmw-m2-dawn-full.mp4', '9:16', 'BMW M Performance // 2°C Dawn Run Hook', 'Motorsport & Auto')">
             <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
             <div class="portrait-viewport">
-              <span class="card-category-tag">Reels & Hooks</span>
-              <span class="card-aspect-badge">9:16 Portrait</span>
-              <img src="https://i.postimg.cc/nzxDDCvL/poster7.jpg" alt="Viral Hook Reel">
+              <video class="card-live-video"
+                     src="assets/videos/bmw-m2-dawn-loop.mp4"
+                     poster="assets/posters/bmw-m2-dawn.jpg"
+                     autoplay loop muted playsinline preload="metadata">
+              </video>
+              <div class="card-action-overlay">
+                <div class="card-action-top">
+                  <span class="card-category-tag">Motorsport & Auto</span>
+                  <span class="card-aspect-badge">9:16 Portrait</span>
+                </div>
+                <div class="card-action-bottom">
+                  <span class="live-badge"><span class="live-dot"></span> LIVE REEL</span>
+                  <div class="card-action-btns">
+                    <button class="card-sound-toggle" aria-label="Toggle Sound" onclick="toggleCardSound(this, event)">
+                      <svg class="sound-icon-muted" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                      <svg class="sound-icon-unmuted" style="display:none;" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                      <span class="sound-label">Audio</span>
+                    </button>
+                    <span class="card-fullscreen-btn">Cinema ↗</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="card-info-pane">
               <div>
                 <div class="card-title-row">
-                  <h3 class="card-work-title">Viral Hook & Lifestyle Reel</h3>
+                  <h3 class="card-work-title">BMW M Performance // 2°C Dawn Run Hook</h3>
                   <span class="card-arrow-icon">▶</span>
                 </div>
                 <p class="card-work-desc">
-                  Vertical-first narrative engineered around the first 2 seconds. Seamless pacing, rhythmic cut transitions, and bold visual grading.
+                  Kinetic vertical automotive reel captured in cold-dawn conditions. Low-angle rolling chase tracking, visceral exhaust notes, and high-retention viral editing.
+                </p>
+              </div>
+              <div class="card-stats-pillbar">
+                <div class="stat-item"><span class="val">9:16 4K</span><span class="lbl">Vertical Ratio</span></div>
+                <div class="stat-item"><span class="val">60 FPS</span><span class="lbl">High Framerate</span></div>
+                <div class="stat-item"><span class="val">M-Power</span><span class="lbl">Exhaust Mix</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. HUMAN DEVELOPMENT SOLUTIONS DMCC (16:9 Landscape - Corporate & Content) -->
+          <div class="work-card-landscape crosshair-box" data-category="content" onclick="openVideoPlayer('assets/videos/hds-corporate-summit-full.mp4', '16:9', 'Human Development Solutions DMCC // Global Summit', 'Commercials & Corporate')">
+            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
+            <div class="landscape-viewport">
+              <video class="card-live-video"
+                     src="assets/videos/hds-corporate-summit-loop.mp4"
+                     poster="assets/posters/hds-corporate-summit.jpg"
+                     autoplay loop muted playsinline preload="metadata">
+              </video>
+              <div class="card-action-overlay">
+                <div class="card-action-top">
+                  <span class="card-category-tag">Commercials & Corporate</span>
+                  <span class="card-aspect-badge">16:9 Landscape</span>
+                </div>
+                <div class="card-action-bottom">
+                  <span class="live-badge"><span class="live-dot"></span> LIVE FILM</span>
+                  <div class="card-action-btns">
+                    <button class="card-sound-toggle" aria-label="Toggle Sound" onclick="toggleCardSound(this, event)">
+                      <svg class="sound-icon-muted" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                      <svg class="sound-icon-unmuted" style="display:none;" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                      <span class="sound-label">Audio</span>
+                    </button>
+                    <span class="card-fullscreen-btn">Full Cinema ↗</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-info-pane">
+              <div>
+                <div class="card-title-row">
+                  <h3 class="card-work-title">Human Development Solutions DMCC // Global Summit</h3>
+                  <span class="card-arrow-icon">▶</span>
+                </div>
+                <p class="card-work-desc">
+                  Prestige corporate summit documentary in Dubai capturing executive keynote addresses, delegate workshops, brand leadership narrative, and high-impact corporate storytelling.
+                </p>
+              </div>
+              <div class="card-stats-pillbar">
+                <div class="stat-item"><span class="val">16:9 Widescreen</span><span class="lbl">Cinema Master</span></div>
+                <div class="stat-item"><span class="val">Dubai DMCC</span><span class="lbl">Executive Summit</span></div>
+                <div class="stat-item"><span class="val">Corporate</span><span class="lbl">Brand Story</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. APEX ACTIVEWEAR (9:16 Portrait - Social Reels) -->
+          <div class="work-card-portrait crosshair-box" data-category="reels" onclick="openVideoPlayer('assets/videos/fitness-activewear-full.mp4', '9:16', 'Apex Activewear // High-Velocity Gym Hook', 'Social Reels')">
+            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
+            <div class="portrait-viewport">
+              <video class="card-live-video"
+                     src="assets/videos/fitness-activewear-loop.mp4"
+                     poster="assets/posters/fitness-activewear.jpg"
+                     autoplay loop muted playsinline preload="metadata">
+              </video>
+              <div class="card-action-overlay">
+                <div class="card-action-top">
+                  <span class="card-category-tag">Social Reels</span>
+                  <span class="card-aspect-badge">9:16 Portrait</span>
+                </div>
+                <div class="card-action-bottom">
+                  <span class="live-badge"><span class="live-dot"></span> LIVE REEL</span>
+                  <div class="card-action-btns">
+                    <button class="card-sound-toggle" aria-label="Toggle Sound" onclick="toggleCardSound(this, event)">
+                      <svg class="sound-icon-muted" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                      <svg class="sound-icon-unmuted" style="display:none;" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                      <span class="sound-label">Audio</span>
+                    </button>
+                    <span class="card-fullscreen-btn">Cinema ↗</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-info-pane">
+              <div>
+                <div class="card-title-row">
+                  <h3 class="card-work-title">Apex Activewear // High-Velocity Gym Hook</h3>
+                  <span class="card-arrow-icon">▶</span>
+                </div>
+                <p class="card-work-desc">
+                  Vertical-first fitness commercial engineered around the critical first 2 seconds. Seamless pacing, speed-ramp cut transitions, dynamic gym acoustics, and high retention.
                 </p>
               </div>
               <div class="card-stats-pillbar">
                 <div class="stat-item"><span class="val">9:16 Vertical</span><span class="lbl">Mobile Ratio</span></div>
-                <div class="stat-item"><span class="val">3.4M+</span><span class="lbl">Organic Views</span></div>
-                <div class="stat-item"><span class="val">+42%</span><span class="lbl">Hook Retention</span></div>
+                <div class="stat-item"><span class="val">4.82x</span><span class="lbl">Paid Ad ROAS</span></div>
+                <div class="stat-item"><span class="val">+58%</span><span class="lbl">Hook Retention</span></div>
               </div>
             </div>
           </div>
 
-          <!-- 3. REAL ESTATE & LUXURY ARCHITECTURE (Landscape 16:9) -->
-          <div class="work-card-landscape crosshair-box" data-category="realestate" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel11.MP4')">
+          <!-- 5. UNDERGROUND SOUND RAP CONCERT (9:16 Portrait - Events & Festivals) -->
+          <div class="work-card-portrait crosshair-box" data-category="events" onclick="openVideoPlayer('assets/videos/mc-live-concert-full.mp4', '9:16', 'Underground Sound // Live Rap & Stage Showcase', 'Events & Festivals')">
             <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
-            <div class="landscape-viewport">
-              <span class="card-category-tag">Real Estate & Architecture</span>
-              <span class="card-aspect-badge">16:9 Landscape</span>
-              <img src="https://i.postimg.cc/G2542Qf7/poster11.jpg" alt="Luxury Villa Walkthrough">
+            <div class="portrait-viewport">
+              <video class="card-live-video"
+                     src="assets/videos/mc-live-concert-loop.mp4"
+                     poster="assets/posters/mc-live-concert.jpg"
+                     autoplay loop muted playsinline preload="metadata">
+              </video>
+              <div class="card-action-overlay">
+                <div class="card-action-top">
+                  <span class="card-category-tag">Events & Nightlife</span>
+                  <span class="card-aspect-badge">9:16 Portrait</span>
+                </div>
+                <div class="card-action-bottom">
+                  <span class="live-badge"><span class="live-dot"></span> LIVE REEL</span>
+                  <div class="card-action-btns">
+                    <button class="card-sound-toggle" aria-label="Toggle Sound" onclick="toggleCardSound(this, event)">
+                      <svg class="sound-icon-muted" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                      <svg class="sound-icon-unmuted" style="display:none;" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                      <span class="sound-label">Audio</span>
+                    </button>
+                    <span class="card-fullscreen-btn">Cinema ↗</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="card-info-pane">
               <div>
                 <div class="card-title-row">
-                  <h3 class="card-work-title">Palm Jumeirah Luxury Villa Walkthrough</h3>
+                  <h3 class="card-work-title">Underground Sound // Live Rap & Stage Showcase</h3>
                   <span class="card-arrow-icon">▶</span>
                 </div>
                 <p class="card-work-desc">
-                  Cinematic architectural showcase with smooth gimbal sweeps, dusk golden hour natural illumination, and premium lifestyle narrative.
+                  Raw stage intensity and live artist delivery. Atmospheric blue neon haze, dynamic hand-held tracking, beat-matched lighting cues, and immersive live crowd energy.
+                </p>
+              </div>
+              <div class="card-stats-pillbar">
+                <div class="stat-item"><span class="val">9:16 Vertical</span><span class="lbl">Stage Reel</span></div>
+                <div class="stat-item"><span class="val">Live Vocal</span><span class="lbl">Direct Audio</span></div>
+                <div class="stat-item"><span class="val">Atmospheric</span><span class="lbl">Neon Flares</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. ACOUSTIC LIVE SESSIONS (9:16 Portrait - Events & Lifestyle) -->
+          <div class="work-card-portrait crosshair-box" data-category="events" onclick="openVideoPlayer('assets/videos/acoustic-live-session-full.mp4', '9:16', 'Acoustic Live Sessions // Concert Stage Spotlight', 'Events & Lifestyle')">
+            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
+            <div class="portrait-viewport">
+              <video class="card-live-video"
+                     src="assets/videos/acoustic-live-session-loop.mp4"
+                     poster="assets/posters/acoustic-live-session.jpg"
+                     autoplay loop muted playsinline preload="metadata">
+              </video>
+              <div class="card-action-overlay">
+                <div class="card-action-top">
+                  <span class="card-category-tag">Events & Lifestyle</span>
+                  <span class="card-aspect-badge">9:16 Portrait</span>
+                </div>
+                <div class="card-action-bottom">
+                  <span class="live-badge"><span class="live-dot"></span> LIVE REEL</span>
+                  <div class="card-action-btns">
+                    <button class="card-sound-toggle" aria-label="Toggle Sound" onclick="toggleCardSound(this, event)">
+                      <svg class="sound-icon-muted" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                      <svg class="sound-icon-unmuted" style="display:none;" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                      <span class="sound-label">Audio</span>
+                    </button>
+                    <span class="card-fullscreen-btn">Cinema ↗</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-info-pane">
+              <div>
+                <div class="card-title-row">
+                  <h3 class="card-work-title">Acoustic Live Sessions // Concert Stage Spotlight</h3>
+                  <span class="card-arrow-icon">▶</span>
+                </div>
+                <p class="card-work-desc">
+                  Soulful live vocalist concert captured with cinematic intimacy. Warm directional spotlights, delicate acoustic audio mastering, and stage presence.
+                </p>
+              </div>
+              <div class="card-stats-pillbar">
+                <div class="stat-item"><span class="val">9:16 Vertical</span><span class="lbl">Acoustic Cut</span></div>
+                <div class="stat-item"><span class="val">Truss Rig</span><span class="lbl">Concert Light</span></div>
+                <div class="stat-item"><span class="val">Live Stage</span><span class="lbl">Performance</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. REAL ESTATE & LUXURY ARCHITECTURE (16:9 Landscape) -->
+          <div class="work-card-landscape crosshair-box" data-category="realestate" onclick="openVideoPlayer('assets/videos/hds-corporate-summit-full.mp4', '16:9', 'Palm Jumeirah & Downtown Luxury Villa Portfolio', 'Real Estate & Luxury')">
+            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
+            <div class="landscape-viewport">
+              <img src="assets/work-branding-CXzo-vUP.jpg" alt="Palm Jumeirah Luxury Villa">
+              <div class="card-action-overlay">
+                <div class="card-action-top">
+                  <span class="card-category-tag">Real Estate & Luxury</span>
+                  <span class="card-aspect-badge">16:9 Landscape</span>
+                </div>
+                <div class="card-action-bottom">
+                  <span class="live-badge"><span class="live-dot"></span> ARCHITECTURE</span>
+                  <div class="card-action-btns">
+                    <span class="card-fullscreen-btn">Explore ↗</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-info-pane">
+              <div>
+                <div class="card-title-row">
+                  <h3 class="card-work-title">Palm Jumeirah & Downtown Luxury Villa Portfolio</h3>
+                  <span class="card-arrow-icon">▶</span>
+                </div>
+                <p class="card-work-desc">
+                  Cinematic architectural showcase with smooth gimbal sweeps, dusk golden hour natural illumination, and premium lifestyle narrative engineered to convert international luxury buyers.
                 </p>
               </div>
               <div class="card-stats-pillbar">
@@ -397,106 +625,38 @@
             </div>
           </div>
 
-          <!-- 4. CONTENT CREATION & PRODUCT STILLS (Portrait 9:16) -->
-          <div class="work-card-portrait crosshair-box" data-category="content" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel4.mp4')">
-            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
-            <div class="portrait-viewport">
-              <span class="card-category-tag">Content Creation</span>
-              <span class="card-aspect-badge">9:16 Portrait</span>
-              <img src="https://i.postimg.cc/JhSM6VyH/poster4.jpg" alt="Product Film">
-            </div>
-            <div class="card-info-pane">
-              <div>
-                <div class="card-title-row">
-                  <h3 class="card-work-title">Luxury Fragrance Commercial</h3>
-                  <span class="card-arrow-icon">▶</span>
-                </div>
-                <p class="card-work-desc">
-                  Studio product shoot built around practical motor turntables, liquid ice textures, and polarized soft lighting for luxury fragrance brands.
-                </p>
-              </div>
-              <div class="card-stats-pillbar">
-                <div class="stat-item"><span class="val">Macro 4K</span><span class="lbl">Bottle Stills</span></div>
-                <div class="stat-item"><span class="val">4.82x</span><span class="lbl">Ad ROAS</span></div>
-                <div class="stat-item"><span class="val">Studio</span><span class="lbl">Light Rig</span></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 5. MOTORSPORT & DESERT ACTION (Landscape 16:9) -->
-          <div class="work-card-landscape crosshair-box" data-category="automotive" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel9.mp4')">
+          <!-- 8. AGGREGATOR & E-COMMERCE PERFORMANCE (16:9 Landscape Wide) -->
+          <div class="work-card-landscape wide crosshair-box" data-category="content" onclick="window.location.href='#contact'">
             <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
             <div class="landscape-viewport">
-              <span class="card-category-tag">Motorsport & Off-Road</span>
-              <span class="card-aspect-badge">16:9 Landscape</span>
-              <img src="https://i.postimg.cc/gjnTkmDD/IMG-7184.jpg" alt="Desert Motorsport Action">
+              <img src="assets/work-ecom-pSvyTuRE.jpg" alt="Aggregator Growth Suite">
+              <div class="card-action-overlay">
+                <div class="card-action-top">
+                  <span class="card-category-tag">Aggregators & Paid Growth</span>
+                  <span class="card-aspect-badge">16:9 Landscape Suite</span>
+                </div>
+                <div class="card-action-bottom">
+                  <span class="live-badge"><span class="live-dot"></span> PERFORMANCE ENGINE</span>
+                  <div class="card-action-btns">
+                    <span class="card-fullscreen-btn">View Metrics ↗</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="card-info-pane">
               <div>
                 <div class="card-title-row">
-                  <h3 class="card-work-title">Polaris & Sherco Desert Dune Action</h3>
-                  <span class="card-arrow-icon">▶</span>
+                  <h3 class="card-work-title">Aggregator Performance Suite // Talabat, Noon & Deliveroo</h3>
+                  <span class="card-arrow-icon">↗</span>
                 </div>
                 <p class="card-work-desc">
-                  High-energy dune buggy and dirt bike film shot in the red sand deserts of Dubai. High-speed chase tracking, dust storms, and aggressive sound editing.
+                  Full-stack e-commerce and aggregator growth across UAE. Engineering high-converting product commercial clips, in-app ad bid optimization, menu engineering, and verified 4.82x ROAS delivery.
                 </p>
               </div>
               <div class="card-stats-pillbar">
-                <div class="stat-item"><span class="val">Action 120fps</span><span class="lbl">Slow Motion</span></div>
-                <div class="stat-item"><span class="val">FPV Drone</span><span class="lbl">Chases</span></div>
-                <div class="stat-item"><span class="val">Outdoor</span><span class="lbl">Location Shoot</span></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 6. EVENTS & NIGHTLIFE (Portrait 9:16) -->
-          <div class="work-card-portrait crosshair-box" data-category="events" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel6.mp4')">
-            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
-            <div class="portrait-viewport">
-              <span class="card-category-tag">Events & Nightlife</span>
-              <span class="card-aspect-badge">9:16 Portrait</span>
-              <img src="https://i.postimg.cc/nL5F52Ys/poster6.png" alt="Event Coverage">
-            </div>
-            <div class="card-info-pane">
-              <div>
-                <div class="card-title-row">
-                  <h3 class="card-work-title">NextDoorParty Dubai Event Film</h3>
-                  <span class="card-arrow-icon">▶</span>
-                </div>
-                <p class="card-work-desc">
-                  Electric nightlife and festival coverage with low-light camera mastery, beat-matched jump cuts, and atmospheric neon flare visuals.
-                </p>
-              </div>
-              <div class="card-stats-pillbar">
-                <div class="stat-item"><span class="val">Live Coverage</span><span class="lbl">Event Turnaround</span></div>
-                <div class="stat-item"><span class="val">24h Edit</span><span class="lbl">Social Delivery</span></div>
-                <div class="stat-item"><span class="val">Viral Sound</span><span class="lbl">Audio Sync</span></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 7. BRAND STORY & NARRATIVE (Landscape 16:9 Wide) -->
-          <div class="work-card-landscape wide crosshair-box" data-category="content" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel3.mp4')">
-            <span class="ch ch-tl">+</span><span class="ch ch-tr">+</span>
-            <div class="landscape-viewport">
-              <span class="card-category-tag">Brand Story</span>
-              <span class="card-aspect-badge">16:9 Landscape Cinematic</span>
-              <img src="https://i.postimg.cc/jqFK2DYK/poster3.jpg" alt="Brand Narrative">
-            </div>
-            <div class="card-info-pane">
-              <div>
-                <div class="card-title-row">
-                  <h3 class="card-work-title">Cinematic Brand Narrative & Founder Journey</h3>
-                  <span class="card-arrow-icon">▶</span>
-                </div>
-                <p class="card-work-desc">
-                  An editorial documentary-style commercial connecting brand heritage with modern aspiration. Designed for hero website banners, investor pitches, and YouTube ads.
-                </p>
-              </div>
-              <div class="card-stats-pillbar">
-                <div class="stat-item"><span class="val">4K Anamorphic</span><span class="lbl">Letterbox Look</span></div>
-                <div class="stat-item"><span class="val">Full Score</span><span class="lbl">Original Mix</span></div>
-                <div class="stat-item"><span class="val">Multi-Cut</span><span class="lbl">30s + 60s + 9:16</span></div>
+                <div class="stat-item"><span class="val">4.82x</span><span class="lbl">Verified ROAS</span></div>
+                <div class="stat-item"><span class="val">6 Platforms</span><span class="lbl">Talabat • Noon • Deliveroo • Careem</span></div>
+                <div class="stat-item"><span class="val">Full-Funnel</span><span class="lbl">Creative to Checkout</span></div>
               </div>
             </div>
           </div>
@@ -507,7 +667,7 @@
     </section>
 
     <!-- ======================================================================
-         ( 04 ) SERVICES (Numbered Large Rows with Center Preview - Rohan Style)
+         ( 04 ) SERVICES (Capabilities & High-End Production Architecture)
          ====================================================================== -->
     <section class="section-spacing" id="services" style="border-top: 1px solid var(--border-line);">
       <div class="container">
@@ -601,7 +761,7 @@
     </section>
 
     <!-- ======================================================================
-         ( 05 ) PACKAGES (Rohan 3 Column Tiers)
+         ( 05 ) PACKAGES (Engagement Models)
          ====================================================================== -->
     <section class="section-spacing" id="packages" style="border-top: 1px solid var(--border-line);">
       <div class="container">
@@ -696,7 +856,7 @@
     </section>
 
     <!-- ======================================================================
-         ( 06 ) ARCHIVE (Rohan Project List with Hover Thumbnails - 00:19)
+         ( 06 ) ARCHIVE (Figo Media Production & Campaign Index)
          ====================================================================== -->
     <section class="section-spacing" id="archive" style="border-top: 1px solid var(--border-line);">
       <div class="container">
@@ -713,40 +873,52 @@
 
         <div class="archive-list-wrap">
           
-          <div class="archive-item-row" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel11.MP4')">
+          <div class="archive-item-row" onclick="openVideoPlayer('assets/videos/hunterhood-festival-full.mp4', '16:9', 'HunterHood Live Festival // Main Stage Aftermovie', 'Events & Festivals')">
+            <span class="archive-year">2026</span>
+            <span class="archive-name">HunterHood Live Festival // Main Stage Aftermovie</span>
+            <div class="archive-thumb-box"><img src="assets/posters/hunterhood-festival.jpg" alt="HunterHood Festival"></div>
+          </div>
+
+          <div class="archive-item-row" onclick="openVideoPlayer('assets/videos/bmw-m2-dawn-full.mp4', '9:16', 'BMW M Performance // 2°C Dawn Run Hook', 'Motorsport & Auto')">
+            <span class="archive-year">2026</span>
+            <span class="archive-name">BMW M Performance // 2°C Dawn Run Hook</span>
+            <div class="archive-thumb-box"><img src="assets/posters/bmw-m2-dawn.jpg" alt="BMW M Dawn Run"></div>
+          </div>
+
+          <div class="archive-item-row" onclick="openVideoPlayer('assets/videos/hds-corporate-summit-full.mp4', '16:9', 'Human Development Solutions DMCC // Global Summit', 'Commercials & Corporate')">
+            <span class="archive-year">2026</span>
+            <span class="archive-name">Human Development Solutions DMCC // Global Summit</span>
+            <div class="archive-thumb-box"><img src="assets/posters/hds-corporate-summit.jpg" alt="Corporate Summit"></div>
+          </div>
+
+          <div class="archive-item-row" onclick="openVideoPlayer('assets/videos/fitness-activewear-full.mp4', '9:16', 'Apex Activewear // High-Velocity Gym Hook', 'Social Reels')">
+            <span class="archive-year">2026</span>
+            <span class="archive-name">Apex Activewear // High-Velocity Gym Hook</span>
+            <div class="archive-thumb-box"><img src="assets/posters/fitness-activewear.jpg" alt="Activewear Commercial"></div>
+          </div>
+
+          <div class="archive-item-row" onclick="openVideoPlayer('assets/videos/mc-live-concert-full.mp4', '9:16', 'Underground Sound // Live Rap & Stage Showcase', 'Events & Nightlife')">
+            <span class="archive-year">2026</span>
+            <span class="archive-name">Underground Sound // Live Rap & Stage Showcase</span>
+            <div class="archive-thumb-box"><img src="assets/posters/mc-live-concert.jpg" alt="Live Rap Showcase"></div>
+          </div>
+
+          <div class="archive-item-row" onclick="openVideoPlayer('assets/videos/acoustic-live-session-full.mp4', '9:16', 'Acoustic Live Sessions // Concert Stage Spotlight', 'Events & Lifestyle')">
+            <span class="archive-year">2026</span>
+            <span class="archive-name">Acoustic Live Sessions // Concert Stage Spotlight</span>
+            <div class="archive-thumb-box"><img src="assets/posters/acoustic-live-session.jpg" alt="Acoustic Session"></div>
+          </div>
+
+          <div class="archive-item-row" onclick="openVideoPlayer('assets/videos/hds-corporate-summit-full.mp4', '16:9', 'Palm Jumeirah Luxury Villa Architecture', 'Real Estate & Luxury')">
             <span class="archive-year">2026</span>
             <span class="archive-name">Palm Jumeirah Luxury Villa Architecture</span>
-            <div class="archive-thumb-box"><img src="https://i.postimg.cc/G2542Qf7/poster11.jpg" alt="Real Estate"></div>
+            <div class="archive-thumb-box"><img src="assets/work-branding-CXzo-vUP.jpg" alt="Real Estate"></div>
           </div>
 
-          <div class="archive-item-row" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel10.mp4')">
-            <span class="archive-year">2026</span>
-            <span class="archive-name">Dubai Supercar & Automotive Film</span>
-            <div class="archive-thumb-box"><img src="assets/work-production-CdUKgkyP.jpg" alt="Automotive"></div>
-          </div>
-
-          <div class="archive-item-row" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel7.mp4')">
-            <span class="archive-year">2026</span>
-            <span class="archive-name">Sterling Luxury Fragrance Commercial</span>
-            <div class="archive-thumb-box"><img src="https://i.postimg.cc/nzxDDCvL/poster7.jpg" alt="Commercial"></div>
-          </div>
-
-          <div class="archive-item-row" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel6.mp4')">
-            <span class="archive-year">2026</span>
-            <span class="archive-name">NextDoorParty Event Coverage</span>
-            <div class="archive-thumb-box"><img src="https://i.postimg.cc/nL5F52Ys/poster6.png" alt="Event"></div>
-          </div>
-
-          <div class="archive-item-row" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel9.mp4')">
+          <div class="archive-item-row" onclick="window.location.href='#contact'">
             <span class="archive-year">2025</span>
-            <span class="archive-name">Polaris & Sherco Red Sands Action</span>
-            <div class="archive-thumb-box"><img src="https://i.postimg.cc/gjnTkmDD/IMG-7184.jpg" alt="Motorsport"></div>
-          </div>
-
-          <div class="archive-item-row" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel4.mp4')">
-            <span class="archive-year">2025</span>
-            <span class="archive-name">Product Commercial Studio Film</span>
-            <div class="archive-thumb-box"><img src="https://i.postimg.cc/JhSM6VyH/poster4.jpg" alt="Product"></div>
+            <span class="archive-name">Aggregator Performance Suite // Talabat, Noon & Deliveroo</span>
+            <div class="archive-thumb-box"><img src="assets/work-ecom-pSvyTuRE.jpg" alt="Aggregator Growth"></div>
           </div>
 
         </div>
@@ -755,7 +927,7 @@
     </section>
 
     <!-- ======================================================================
-         ( 07 ) CINEMATIC BANNER / DESERT QUOTE (Rohan Signature 00:21)
+         ( 07 ) CINEMATIC BANNER / EDITORIAL QUOTE
          ====================================================================== -->
     <section class="cinematic-quote-banner crosshair-box">
       <div class="cinematic-quote-scrim"></div>
@@ -776,7 +948,7 @@
     </section>
 
     <!-- ======================================================================
-         ( 08 ) FAQ & BEHIND THE FRAME (Rohan 00:24)
+         ( 08 ) FAQ & BEHIND THE FRAME
          ====================================================================== -->
     <section class="section-spacing" id="faq" style="border-top: 1px solid var(--border-line);">
       <div class="container">
@@ -791,14 +963,18 @@
           
           <!-- Left: Showreel 2026 Interactive Card -->
           <div>
-            <div class="showreel-feature-card" onclick="openVideoPlayer('https://ovlecd37gjnsopi9.public.blob.vercel-storage.com/reel1.mp4')">
-              <img src="assets/work-production-CdUKgkyP.jpg" alt="Play Showreel">
+            <div class="showreel-feature-card" onclick="openVideoPlayer('assets/videos/hunterhood-festival-full.mp4', '16:9', 'FIGO MEDIA Showreel // HunterHood Live & Festival Cinema', 'Selected Works')">
+              <video class="card-live-video"
+                     src="assets/videos/hunterhood-festival-loop.mp4"
+                     poster="assets/posters/hunterhood-festival.jpg"
+                     autoplay loop muted playsinline preload="metadata">
+              </video>
               <div class="showreel-play-overlay">
-                <span>▶ Play Showreel 2026</span>
+                <span>▶ Play Cinema Reel</span>
               </div>
             </div>
             <p style="font-size: var(--text-small); color: var(--text-muted); margin-top: 14px;">
-              From the other side of the lens — a 60-second compilation of recent commercial, automotive, real estate, and lifestyle productions across the UAE.
+              From the other side of the lens — a high-energy compilation of recent festival, automotive, corporate, and lifestyle productions across Dubai & the UAE.
             </p>
           </div>
 
@@ -807,11 +983,11 @@
             
             <div class="faq-row active">
               <div class="faq-q-bar">
-                <h4>What kind of video projects do you take on?</h4>
+                <h4>What kind of video projects do you produce?</h4>
                 <span class="faq-toggle">+</span>
               </div>
               <div class="faq-ans-box">
-                <p>We produce social reels, automotive and motorsport films, luxury real estate villa tours, commercial product shoots, and paid ad creatives for brands wanting a premium aesthetic coupled with algorithmic conversion performance.</p>
+                <p>We produce high-impact social reels, motorsport & automotive films, music festival & live concert coverage, corporate summit documentaries, luxury real estate tours, and multi-channel paid ad creative for brands seeking a luxury aesthetic paired with algorithmic conversion.</p>
               </div>
             </div>
 
@@ -821,7 +997,7 @@
                 <span class="faq-toggle">+</span>
               </div>
               <div class="faq-ans-box">
-                <p>We shoot specifically with multi-framing guidelines. Every campaign is delivered in native 9:16 vertical for TikTok and Instagram Reels, 16:9 widescreen for website heroes, YouTube, and broadcast, plus 1:1 square for feed carousels.</p>
+                <p>We shoot specifically with multi-framing guidelines. Every campaign is cut in native 9:16 vertical for TikTok and Instagram Reels, 16:9 widescreen for websites, YouTube, and broadcast, plus 1:1 square for feed carousels.</p>
               </div>
             </div>
 
@@ -831,7 +1007,7 @@
                 <span class="faq-toggle">+</span>
               </div>
               <div class="faq-ans-box">
-                <p>No. Our methodology is built on minimal, clever setups — practical lighting, motors, smoke, and cinema cameras. The crew only scales when the story and scale demand it, keeping production nimble and cost-effective.</p>
+                <p>No. Our methodology is built on minimal, clever setups — practical lighting, camera rigs, and high-velocity pacing. The crew only scales when the story and scale demand it, keeping productions agile, cost-effective, and fast.</p>
               </div>
             </div>
 
@@ -853,7 +1029,7 @@
     </section>
 
     <!-- ======================================================================
-         ( 09 ) FOOTER (Rohan 00:25 - 00:27 with Bottom Giant Wordmark)
+         ( 09 ) FOOTER
          ====================================================================== -->
     <footer class="footer-editorial-section" id="contact">
       <div class="container">
@@ -879,7 +1055,7 @@
           </div>
         </div>
 
-        <!-- Rohan Signature Giant Wordmark Across Bottom Footer -->
+        <!-- Giant Wordmark Across Bottom Footer -->
         <div class="footer-giant-wordmark-row">
           <div class="footer-wordmark">FIGO MEDIA</div>
           <div class="footer-bottom-meta">
@@ -897,7 +1073,13 @@
   <!-- Video Playback Modal (Supports both 16:9 Landscape & 9:16 Portrait) -->
   <div class="modal-overlay" id="videoModal">
     <div class="modal-box">
-      <button class="modal-close-trigger" id="videoModalClose">✕</button>
+      <div class="modal-top-bar">
+        <div class="modal-meta-left">
+          <span class="modal-category-tag" id="modalVideoCategory">Selected Work</span>
+          <h3 class="modal-film-title" id="modalVideoTitle">FIGO MEDIA Cinema Showcase</h3>
+        </div>
+        <button class="modal-close-trigger" id="videoModalClose" aria-label="Close Player">✕</button>
+      </div>
       <div class="modal-video-viewport">
         <video id="modalVideoPlayer" controls playsinline></video>
       </div>
